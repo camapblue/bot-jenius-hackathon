@@ -2,7 +2,7 @@
 /*jshint esversion: 6 */
 
 const botReply = require('./bot/reply');
-const constant = require('./util/constant');
+const constant = require('./utils/constant');
 
 function test(userChat) {
   const message = {
