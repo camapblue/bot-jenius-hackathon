@@ -55,7 +55,7 @@ module.exports = class TeamService {
   getPatternMatches() {
     const patterns = [];
     patterns.push(new Pattern([/^how many teams.*\?$/], 
-      () => this.totalNumberOfTeams()
+      (userchat) => this.totalNumberOfTeams()
       .then((number) => {
         return `Number of TEAMS = ${number}`;
       }))

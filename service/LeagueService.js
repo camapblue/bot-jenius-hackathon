@@ -55,10 +55,14 @@ module.exports = class LeagueService {
   getPatternMatches() {
     const patterns = [];
     patterns.push(new Pattern([/^how many leagues.*\?$/], 
-      () => this.totalNumberOfLeagues()
+      (userchat) => this.totalNumberOfLeagues()
       .then((number) => {
         return `Number of LEAGUES = ${number}`;
       }))
+    );
+
+    patterns.push(new Pattern([/^show user chat$/],
+      (userchat) => Promise.resolve(`user chat: ${userchat}`))
     );
 
     return patterns;

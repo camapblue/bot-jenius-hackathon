@@ -35,7 +35,7 @@ module.exports = class PatternMatch {
         break;
       }
     }
-    if (found !== null) return found();
+    if (found !== null) return found(userChat);
 
     return Promise.resolve("I don't know what you say.");
   }

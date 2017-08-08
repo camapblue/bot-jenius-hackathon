@@ -80,14 +80,14 @@ module.exports = class MatchService {
   getPatternMatches() {
     const patterns = [];
     patterns.push(new Pattern([/^how many matches.*\?$/],
-      () => this.totalNumberOfMatches()
+      (userchat) => this.totalNumberOfMatches()
       .then((number) => {
         return `Number of MATCHES = ${number}`;
       }))
     );
 
     patterns.push(new Pattern([/^show live match$/, /^live match$/],
-      () => this.showLiveMatches())
+      (userchat) => this.showLiveMatches())
     );
 
     return patterns;
