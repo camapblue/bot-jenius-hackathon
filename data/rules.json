@@ -1,0 +1,20 @@
+[
+  {
+    "patterns": [
+      "hi", "hello", "hello there"
+    ],
+    "replies": [
+      "hi there. I'm bot.", "hi, I'm bot."
+    ],
+    "random": true
+  },
+  {
+    "patterns": [
+      "how are you?", "how r u?"
+    ],
+    "replies": [
+      "I'm fine. Thanks. Can I help you?"
+    ],
+    "random": false
+  }
+]

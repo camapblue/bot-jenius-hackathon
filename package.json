@@ -1,0 +1,35 @@
+{
+  "name": "bbbot",
+  "author": "",
+  "version": "1.0.0",
+  "description": "A robot that know everything about football, help people to watch football with more fun.",
+  "main": "bot.js",
+  "scripts": {
+    "create": "claudia create --region ap-southeast-1 --api-module bot --timeout 120 --allow-recursion --configure-fb-bot --name bbbot",
+    "update:fb": "claudia update --configure-fb-bot",
+    "delete": "claudia destroy",
+    "aws:delete": "aws lambda delete-function --function-name bbbot --region ap-southeast-1",
+    "aws:refresh": "aws iam delete-role-policy --role-name bbbot-executor --policy-name log-writer && aws iam delete-role --role-name bbbot-executor",
+    "aws:list": "aws lambda list-functions --region ap-southeast-1",
+    "test": "claudia test-lambda --event ./test/chat.json"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.82.0",
+    "bluebird": "^3.5.0",
+    "claudia-bot-builder": "^2.15.0",
+    "co": "^4.6.0",
+    "co-each": "^0.1.0",
+    "co-request": "^1.0.0",
+    "enum": "^2.4.0",
+    "huh": "^2.0.1",
+    "mysql": "^2.13.0"
+  },
+  "consumedServices": {
+    "linter-indie": {
+      "versions": {
+        "2.0.0": "consumeIndie"
+      }
+    }
+  }
+}

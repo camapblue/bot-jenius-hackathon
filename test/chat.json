@@ -1,0 +1,10 @@
+{
+    "text" : "Here is text data",
+    "sender" : "230493248",
+    "originalRequest": {
+        "functionName": "testChatWithLove",
+        "functionVersion": "0.9.9"
+    }
+}
+
+// {"sender":{"id":"1471812739522327"},"recipient":{"id":"478332209225826"},"timestamp":1500780838630,"message":{"mid":"mid.$cAAGzCjFu0-9jnseG5ldbYI6qrEAL","seq":68471,"text":"hi"}}
