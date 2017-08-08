@@ -1,15 +1,15 @@
 {
-  "name": "bbbot",
+  "name": "jeni",
   "author": "",
   "version": "1.0.0",
-  "description": "A robot that know everything about football, help people to watch football with more fun.",
+  "description": "A chat bot for jenius project in hackathon competition.",
   "main": "bot.js",
   "scripts": {
-    "create": "claudia create --region ap-southeast-1 --api-module bot --timeout 120 --allow-recursion --configure-fb-bot --name bbbot",
+    "create": "claudia create --region ap-southeast-1 --api-module bot --timeout 120 --allow-recursion --configure-fb-bot --name jenibot",
     "update:fb": "claudia update --configure-fb-bot",
     "delete": "claudia destroy",
-    "aws:delete": "aws lambda delete-function --function-name bbbot --region ap-southeast-1",
-    "aws:refresh": "aws iam delete-role-policy --role-name bbbot-executor --policy-name log-writer && aws iam delete-role --role-name bbbot-executor",
+    "aws:delete": "aws lambda delete-function --function-name jenibot --region ap-southeast-1",
+    "aws:refresh": "aws iam delete-role-policy --role-name jenibot-executor --policy-name log-writer && aws iam delete-role --role-name jenibot-executor",
     "aws:list": "aws lambda list-functions --region ap-southeast-1",
     "test": "claudia test-lambda --event ./test/chat.json"
   },

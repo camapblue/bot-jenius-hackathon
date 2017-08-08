@@ -7,8 +7,8 @@ const botReply = require('./bot/reply');
 
 /*
   Token:
-  EAASTRYFJ6pMBADdDnovcHX6D85ABYjBwrQkxgqKceHcltGqLvuh7uW4wvNQXARaxPNwowsNbjCbYzZBp2wmjghFkNsZBtUDBFxDyvGiqeC7lTC03mtMHmeJjdpZBSAAqUYtGAt857tQaumUSZA5tGKQ8FgOItcoHYJxcN2TIJQZDZD
-  App secret: ba6022f5ea09dec455dfd78c7798539d
+  EAAZAKw299QncBAPjrp1T1AT0A5h6HZAVcfx794J85tNYYKnbp4DPOtD15c5oxVmUZBNZCHesF3ojvViXyKa4fjMb6M23lZCWajLEPSNYNa0XVlIwbm4vvKe9pHlICz1Cfb1vTbRXeAL3NPTbGKGVbY9zR2ELHbLZBUlscvamZBqlgZDZD
+  App secret: ce7a646fa10260bbd79628b9e582ba49
 
   For lambda create => MUST UPDATE verify_URL & verify_token
 */

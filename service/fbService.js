@@ -1,7 +1,7 @@
 'use strict';
 
 const rp = require('minimal-request-promise'),
-  breakText = require('../util/breaktext');
+  breakText = require('../utils/breaktext');
 
 module.exports = function fbReply(recipient, message, fbAccessToken) {
   var sendSingle = function sendSingle (message) {
