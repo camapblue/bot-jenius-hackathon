@@ -5,7 +5,7 @@ const co = require('co');
 const excuse = require('huh');
 const fbTemplate = require('claudia-bot-builder').fbTemplate;
 
-const rules = new AIRules('./data/rules.json');
+const rules = new AIRules('./src/data/rules.json');
 const fbReply = require('../service/fbService');
 
 function aiReply(sender, text) {

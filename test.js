@@ -1,5 +1,5 @@
-import botReply from './bot/reply';
-import constant from './utils/constant';
+import botReply from './src/bot/reply';
+import constant from './src/utils/constant';
 var readline = require('readline');
 
 function test(userChat) {
