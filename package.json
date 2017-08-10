@@ -11,7 +11,8 @@
     "aws:delete": "aws lambda delete-function --function-name jenibot --region ap-southeast-1",
     "aws:refresh": "aws iam delete-role-policy --role-name jenibot-executor --policy-name log-writer && aws iam delete-role --role-name jenibot-executor",
     "aws:list": "aws lambda list-functions --region ap-southeast-1",
-    "test": "claudia test-lambda --event ./test/chat.json"
+    "test:claudia": "claudia test-lambda --event ./test/chat.json",
+    "test": "babel-node test"
   },
   "license": "ISC",
   "dependencies": {
@@ -31,5 +32,10 @@
         "2.0.0": "consumeIndie"
       }
     }
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1"
   }
 }

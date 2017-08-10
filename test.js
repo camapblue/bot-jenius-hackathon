@@ -1,21 +1,18 @@
-
-/*jshint esversion: 6 */
-
-const botReply = require('./bot/reply');
-const constant = require('./utils/constant');
+import botReply from './bot/reply';
+import * as constant from './utils/constant';
+var readline = require('readline');
 
 function test(userChat) {
   const message = {
       text: userChat,
       sender: constant.senders.kingbon
-  }
+  };
   botReply(message)
   .then((reply) => {
     console.log(reply);
   });
 }
 
-var readline = require('readline');
 
 var rl = readline.createInterface(process.stdin, process.stdout);
 

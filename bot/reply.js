@@ -1,14 +1,12 @@
-/*jshint esversion: 6 */
-
-'use strict';
+import AIRules from './AIRules';
+import constant from '../utils/constant';
 
 const co = require('co');
 const excuse = require('huh');
 const fbTemplate = require('claudia-bot-builder').fbTemplate;
-const AIRules = require('./AIRules');
+
 const rules = new AIRules('./data/rules.json');
 const fbReply = require('../service/fbService');
-const constant = require('../utils/constant');
 
 function aiReply(sender, text) {
   return co(function*() {
@@ -37,10 +35,12 @@ function typingOff(sender) {
   fbReply(sender, message, constant.accessToken);
 }
 
-module.exports = function botReply(message) {
+const botReply = message => {
   const { sender, text } = message;
 
   typingOn(sender);  
 
   return aiReply(sender, text);
 };
+
+export default botReply;

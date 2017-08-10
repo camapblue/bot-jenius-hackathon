@@ -1,26 +1,10 @@
-/*jshint esversion: 6 */
-/*jshint -W097 */
-/*jslint node: true */
+import JeniusService from '../service/JeniusService';
 
-'use strict';
-
-// Regular expression
-// or: |
-// and: .*
-
-var TeamService = require('../service/TeamService');
-var LeagueService = require('../service/LeagueService');
-var MatchService = require('../service/MatchService');
-
-module.exports = class PatternMatch {
+class PatternMatch {
   constructor() {
-    this.teamService = new TeamService();
-    this.leagueService = new LeagueService();
-    this.matchService = new MatchService(this.teamService, this.leagueService);
+    this.jeniusService = new JeniusService();
 
-    let temp = this.teamService.getPatternMatches();
-    temp = temp.concat(this.leagueService.getPatternMatches());
-    temp = temp.concat(this.matchService.getPatternMatches());
+    let temp = this.jeniusService.getPatternMatches();
     this.patterns = temp;
   }
 
@@ -39,4 +23,6 @@ module.exports = class PatternMatch {
 
     return Promise.resolve("I don't know what you say.");
   }
-};
+}
+
+export default PatternMatch

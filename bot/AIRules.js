@@ -1,14 +1,8 @@
-/*jshint esversion: 6 */
-/*jshint -W097 */
-/*jslint node: true */
-
-'use strict';
-
 const Rule = require('./rule');
 var fs = require('fs');
-var PatternMatch = require('./PatternMatch');
+import PatternMatch from './PatternMatch';
 
-module.exports = class AIRules {
+class AIRules {
   constructor(jsonFile) {
     this.patternMatch = new PatternMatch()
 
@@ -35,4 +29,6 @@ module.exports = class AIRules {
 
     return this.patternMatch.match(userChat.toLowerCase());
   }
-};
+}
+
+export default AIRules;
