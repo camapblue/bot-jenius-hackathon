@@ -39,7 +39,7 @@ class AIRules {
   match(message) {
     const simpleResule = this._detectSimpleRule(message);
     if (simpleResule) {
-      return Promise.resolve(found);
+      return Promise.resolve(simpleResule);
     }
 
     return this._detectAdvanceRule(message);
