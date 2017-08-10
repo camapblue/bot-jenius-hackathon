@@ -8,18 +8,21 @@ class PatternMatch {
     this.patterns = temp;
   }
 
-  match(userChat) {
-
+  match(message) {
     let found = null;
+
     for (let i = 0; i < this.patterns.length; i += 1) {
       const pattern = this.patterns[i];
-      const action = pattern.test(userChat);
+      const action = pattern.test(message);
       if (action !== null) {
         found = action;
         break;
       }
     }
-    if (found !== null) return found(userChat);
+
+    if (found) {
+      return Promise.resolve(found(message));
+    }
 
     return Promise.resolve("I don't know what you say.");
   }

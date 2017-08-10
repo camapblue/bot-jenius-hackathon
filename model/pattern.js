@@ -10,11 +10,11 @@ module.exports = class Pattern {
     this.action = action;
   }
 
-  test(userchat) {
+  test(message) {
     let found = false;
     for (let i = 0; i < this.patterns.length; i += 1) {
       const regex = this.patterns[i];
-      found = regex.test(userchat);
+      found = regex.test(message);
       if (found) break;
     }
     if (found) {

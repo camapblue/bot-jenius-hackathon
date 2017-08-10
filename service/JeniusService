@@ -16,7 +16,7 @@ class JeniusService {
   // pattern matches
   getPatternMatches() {
     const patterns = [];
-    patterns.push(new Pattern([/^how many teams.*\?$/],
+    patterns.push(new Pattern([/^teams$/],
       () => this.totalNumberOfTeams()
         .then((number) => {
           return `Number of TEAMS = ${number}`;

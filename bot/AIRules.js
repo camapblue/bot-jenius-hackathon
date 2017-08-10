@@ -1,33 +1,48 @@
 const Rule = require('./rule');
-var fs = require('fs');
+let fs = require('fs');
 import PatternMatch from './PatternMatch';
 
 class AIRules {
   constructor(jsonFile) {
-    this.patternMatch = new PatternMatch()
+    this.patternMatch = new PatternMatch();
+    this._initSimpleRule(jsonFile);
+  }
 
-    var rulesJSON = JSON.parse(fs.readFileSync(jsonFile, 'utf8'));
-    var rules = [];
-    for (var i = 0, len = rulesJSON.length; i < len; i++) {
-      var item = rulesJSON[i];
+  _initSimpleRule(jsonFile) {
+    let rulesJSON = JSON.parse(fs.readFileSync(jsonFile, 'utf8'));
+    let rules = [];
+    for (let i = 0, len = rulesJSON.length; i < len; i++) {
+      let item = rulesJSON[i];
       rules.push(new Rule(item.patterns, item.replies, item.random));
     }
     this.rules = rules;
   }
 
-  match(userChat) {
-    var found = '';
+  _detectSimpleRule(message) {
+    let found = undefined;
     this.rules.every(function(rule, index) {
-      var testMatch = rule.match(userChat);
+      let testMatch = rule.match(message);
       if (testMatch) {
         found = testMatch;
         return false;
       }
       return true;
     });
-    if (found.length > 0) return Promise.resolve(found);
 
-    return this.patternMatch.match(userChat.toLowerCase());
+    return found;
+  }
+
+  _detectAdvanceRule(message) {
+    return this.patternMatch.match(message);
+  }
+
+  match(message) {
+    const simpleResule = this._detectSimpleRule(message);
+    if (simpleResule) {
+      return Promise.resolve(found);
+    }
+
+    return this._detectAdvanceRule(message);
   }
 }
 
