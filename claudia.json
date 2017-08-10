@@ -5,7 +5,7 @@
     "region": "ap-southeast-1"
   },
   "api": {
-    "id": "ohttn1l45c",
-    "module": "bot"
+    "id": "il4rge6fb2",
+    "module": "bin/bot"
   }
 }
