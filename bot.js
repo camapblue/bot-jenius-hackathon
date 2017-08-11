@@ -3,7 +3,7 @@
 'use strict';
 
 const botBuilder = require('claudia-bot-builder');
-import botReply from './bot/reply';
+const botReply = require('./bin/bot/reply');
 
 /*
   Token:
