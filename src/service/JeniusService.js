@@ -18,10 +18,8 @@ class JeniusService {
     const patterns = [];
     patterns.push(new Pattern([/^teams$/],
       () => this.totalNumberOfTeams()
-        .then((number) => {
-          return `Number of TEAMS = ${number}`;
-        }))
-    );
+        .then((number) => `Number of TEAMS = ${number}`)
+      ));
 
     return patterns;
   }
