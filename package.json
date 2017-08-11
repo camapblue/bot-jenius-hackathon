@@ -23,9 +23,6 @@
     "axios": "^0.16.2",
     "bluebird": "^3.5.0",
     "claudia-bot-builder": "^2.15.0",
-    "co": "^4.6.0",
-    "co-each": "^0.1.0",
-    "co-request": "^1.0.0",
     "enum": "^2.4.0",
     "huh": "^2.0.1",
     "mysql": "^2.13.0"

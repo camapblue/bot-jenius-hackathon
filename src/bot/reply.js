@@ -1,24 +1,20 @@
 import AIRules from './AIRules';
 import constant from '../utils/constant';
 
-const co = require('co');
-const excuse = require('huh');
-const fbTemplate = require('claudia-bot-builder').fbTemplate;
+import { fbTemplate } from 'claudia-bot-builder';
 
 const rules = new AIRules('./src/data/rules.json');
-const fbReply = require('../service/fbService');
+import fbReply from '../service/fbService';
 
-function aiReply(sender, text) {
-  return co(function*() {
-    const reply = yield rules.match(text);
+const aiReply = async (sender, text) => {
+  const reply = await rules.match(text);
 
-    typingOff(sender);
+  typingOff(sender);
 
-    return reply;
-  });
+  return reply;
 }
 
-function typingOn(sender) {
+const typingOn = (sender) => {
   if (constant.isTesting) {
     console.log('typing...');
     return;
@@ -27,7 +23,7 @@ function typingOn(sender) {
   fbReply(sender, message, constant.accessToken);
 }
 
-function typingOff(sender) {
+const typingOff = (sender) => {
   if (constant.isTesting) {
     return;
   }
@@ -38,7 +34,7 @@ function typingOff(sender) {
 const botReply = message => {
   const { sender, text } = message;
 
-  typingOn(sender);  
+  typingOn(sender);
 
   return aiReply(sender, text);
 };
