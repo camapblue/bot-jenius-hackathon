@@ -7,19 +7,15 @@ const excuse = require('huh');
 const fbTemplate = require('claudia-bot-builder').fbTemplate;
 
 // const rules = new AIRules('./src/data/rules.json');
-
 const fbReply = require('../service/fbService');
 
 const messageProcessor = new MessageService();
-function aiReply(sender, text) {
-  return co(function*() {
-    const reply = yield messageProcessor.process(text);
 
-    typingOff(sender);
-
-    return reply;
-  });
-}
+const aiReply = async (sender, text) => {
+  const reply = await messageProcessor.process(text);
+  typingOff(sender);
+  return reply;
+};
 
 function typingOn(sender) {
   if (constant.isTesting) {
