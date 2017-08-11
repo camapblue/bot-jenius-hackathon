@@ -1,8 +1,4 @@
-/*jshint esversion: 6 */
-
-'use strict';
-
-const botBuilder = require('claudia-bot-builder');
+import botBuilder from 'claudia-bot-builder';
 import botReply from './bot/reply';
 
 /*

@@ -1,4 +1,4 @@
-{
+const testDataJSON = {
   "users": [
     {
       "preferences": {},
@@ -22239,4 +22239,6 @@
       "isValid": true
     }
   ]
-}
+};
+
+export default testDataJSON;

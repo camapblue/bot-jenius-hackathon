@@ -3,9 +3,9 @@ import api from './apiClient';
 const Pattern = require('../model/pattern');
 
 class JeniusService {
-  _patterns = [];
-
   constructor() {
+    this._patterns = [];
+
     this.initPatterns();
   }
 
@@ -27,7 +27,6 @@ class JeniusService {
   }
 
   initPatterns() {
-
     const patterns = [
       {
         regex: [/^teams$/],
@@ -49,4 +48,3 @@ class JeniusService {
 }
 
 export default JeniusService;
-

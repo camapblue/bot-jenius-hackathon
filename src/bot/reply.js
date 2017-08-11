@@ -6,12 +6,12 @@ import { fbTemplate } from 'claudia-bot-builder';
 const rules = new AIRules('./src/data/rules.json');
 import fbReply from '../service/fbService';
 
-const aiReply = async (sender, text) => {
-  const reply = await rules.match(text);
-
-  typingOff(sender);
-
-  return reply;
+const aiReply = (sender, text) => {
+  return rules.match(text)
+  .then((reply) => {
+      typingOff(sender);
+      return reply;
+  });
 }
 
 const typingOn = (sender) => {

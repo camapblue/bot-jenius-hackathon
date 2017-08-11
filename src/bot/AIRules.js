@@ -1,5 +1,5 @@
-const Rule = require('./rule');
-let fs = require('fs');
+import Rule from './rule';
+import rulesJSON from '../data/rules';
 import PatternMatch from './PatternMatch';
 
 class AIRules {
@@ -9,7 +9,6 @@ class AIRules {
   }
 
   _initSimpleRule(jsonFile) {
-    let rulesJSON = JSON.parse(fs.readFileSync(jsonFile, 'utf8'));
     let rules = [];
     for (let i = 0, len = rulesJSON.length; i < len; i++) {
       let item = rulesJSON[i];
