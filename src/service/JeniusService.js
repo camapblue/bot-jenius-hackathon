@@ -33,7 +33,13 @@ class JeniusService {
         regex: [/^teams$/],
         action: this._totalNumberOfTeams()
           .then((number) => `Number of TEAMS = ${number}`)
+      },
+      {
+        regex: [/balance/],
+        action: this._getCurrentBalance()
+          .then((balance) => `Your current balance: ${balance}`)
       }
+
     ];
 
     for(let pattern of patterns) {
