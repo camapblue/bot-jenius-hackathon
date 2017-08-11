@@ -9,7 +9,7 @@
   "scripts": {
     "transpile": "babel --presets es2015 src --out-dir bin",
     "create": "rm -rf claudia.json && yarn transpile && claudia create --region ap-southeast-1 --api-module bin/bot --timeout 120 --configure-fb-bot --name jenibot",
-    "update:fb": "claudia update --configure-fb-bot",
+    "update:fb": "yarn transpile && claudia update --configure-fb-bot",
     "delete": "claudia destroy",
     "aws:delete": "aws lambda delete-function --function-name jenibot --region ap-southeast-1",
     "aws:refresh": "aws iam delete-role-policy --role-name jenibot-executor --policy-name log-writer && aws iam delete-role --role-name jenibot-executor",

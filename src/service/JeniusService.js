@@ -27,18 +27,15 @@ class JeniusService {
   }
 
   initPatterns() {
-    const patterns = [
-      {
+    const patterns = [{
         regex: [/^teams$/],
         action: this._totalNumberOfTeams()
-          .then((number) => `Number of TEAMS = ${number}`)
-      },
-      {
+          .then(number => `Number of TEAMS = ${number}`)
+      }, {
         regex: [/balance/],
         action: this._getCurrentBalance()
-          .then((balance) => `Your current balance: ${balance}`)
+          .then(balance => `Your current balance: ${balance}`)
       }
-
     ];
 
     for(let pattern of patterns) {

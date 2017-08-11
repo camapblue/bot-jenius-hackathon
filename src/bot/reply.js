@@ -1,13 +1,15 @@
 import AIRules from './AIRules';
 import constant from '../utils/constant';
+import MessageService from './MessageProcessService';
 
 import { fbTemplate } from 'claudia-bot-builder';
 
-const rules = new AIRules('./src/data/rules.json');
-import fbReply from '../service/fbService';
+const fbReply = require('../service/fbService');
+
+const messageProcessor = new MessageService();
 
 const aiReply = (sender, text) => {
-  return rules.match(text)
+  return messageProcessor.process(text)
   .then((reply) => {
       typingOff(sender);
       return reply;
