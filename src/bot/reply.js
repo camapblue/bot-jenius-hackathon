@@ -1,16 +1,19 @@
 import AIRules from './AIRules';
 import constant from '../utils/constant';
+import MessageService from './MessageProcessService';
 
 const co = require('co');
 const excuse = require('huh');
 const fbTemplate = require('claudia-bot-builder').fbTemplate;
 
-const rules = new AIRules('./src/data/rules.json');
+// const rules = new AIRules('./src/data/rules.json');
+
 const fbReply = require('../service/fbService');
 
+const messageProcessor = new MessageService();
 function aiReply(sender, text) {
   return co(function*() {
-    const reply = yield rules.match(text);
+    const reply = yield messageProcessor.process(text);
 
     typingOff(sender);
 
