@@ -13,10 +13,10 @@ module.exports = class Rule {
     this.isRandom = isRandom;
   }
 
-  match(userChat) {
+  match(message) {
     var found = false;
     this.patterns.every(function(element, index) {
-      if (userChat.toLowerCase().trim() === element.toLowerCase()) {
+      if (message.toLowerCase().trim() === element.toLowerCase()) {
         found = true;
         return false;
       }

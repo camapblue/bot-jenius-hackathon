@@ -6,7 +6,6 @@
   "files": [
     "bin"
   ],
-  "main": "bot.js",
   "scripts": {
     "transpile": "babel --presets es2015 src --out-dir bin",
     "create": "rm -rf claudia.json && yarn transpile && claudia create --region ap-southeast-1 --api-module bin/bot --timeout 120 --allow-recursion --configure-fb-bot --name jenibot",
