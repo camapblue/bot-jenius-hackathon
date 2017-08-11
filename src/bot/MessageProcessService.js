@@ -1,6 +1,7 @@
 import api from '../service/apiClient';
 
 const NOUN_BALANCE = 'balance';
+const NOUN_SPENDING = 'spending';
 const NOUN_WEATHER = 'weather';
 
 const ACTION_SEND = 'send';
@@ -19,7 +20,7 @@ class MessageProcessService {
     }
 
     return Promise.all(promises).then(replyMessages => {
-      return replyMessages.join('.');
+      return replyMessages.join('. ');
     });
   }
 
