@@ -3,6 +3,16 @@ import api from './apiClient';
 const Pattern = require('../model/pattern');
 
 class JeniusService {
+  _patterns = [];
+
+  constructor() {
+    this.initPatterns();
+  }
+
+  _addPattern(regexes, action) {
+    const pattern = new Pattern(regexes, () => action);
+    this._patterns.push(pattern);
+  }
 
   _totalNumberOfTeams() {
     return Promise.resolve(12);
@@ -13,22 +23,22 @@ class JeniusService {
   }
 
   getPatternMatches() {
-    const patterns = [];
+    return this._patterns;
+  }
 
-    const team = new Pattern([/^teams$/],
-      () => this._totalNumberOfTeams()
-        .then((number) => `Number of TEAMS = ${number}`)
-    );
-    patterns.push(team);
+  initPatterns() {
 
-    const currentBalance = new Pattern([/balance/],
-      () => this._getCurrentBalance()
-        .then(balance => `Your current balance is ${balance}`)
-    );
+    const patterns = [
+      {
+        regex: [/^teams$/],
+        action: this._totalNumberOfTeams()
+          .then((number) => `Number of TEAMS = ${number}`)
+      }
+    ];
 
-    patterns.push(currentBalance);
-
-    return patterns;
+    for(let pattern of patterns) {
+      this._addPattern(pattern.regex, pattern.action);
+    }
   }
 }
 
