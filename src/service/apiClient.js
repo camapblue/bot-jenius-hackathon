@@ -1,30 +1,20 @@
 import axios from 'axios'
 
-const baseUrl = 'http://microservice-jenius-bot.microservice-jenius-bot.f7123b89.svc.dockerapp.io:3000/actions/';
+const baseUrl = 'http://microservice-jenius-bot.microservice-jenius-bot.f7123b89.svc.dockerapp.io:3000/';
 
 const getUrl = action => baseUrl + action;
 
 const callApi = (method = 'get', action, param, data) => {
-  let finalUrl = null;
-  if (param) {
-    finalUrl = getUrl(action)
-  } else {
-    finalUrl = getUrl(action + '?' + param);
-  }
+  const url = param ? getUrl(action + '?' + param): getUrl(action);
 
-  return axios({
-    method,
-    url: finalUrl,
-    data
-  }).then(response => response.data);
+  return axios({ method, url, data })
+    .then(response => response.data);
 };
 
-const getCurrentBalance = (accountNumber) => {
-  return callApi('post', 'show-balance', null, {
-    accountNumber: accountNumber
-  });
-};
+const getCurrentBalance = accountNumber => callApi('post', 'show-balance', null, { accountNumber });
+const getUser = username => callApi('get', 'users/'+ username);
 
 export default {
-  getCurrentBalance
+  getCurrentBalance,
+  getUser
 }

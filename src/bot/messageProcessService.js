@@ -1,4 +1,6 @@
 import api from '../service/apiClient';
+import accountService from '../domain/accountService';
+import authService from '../domain/authService';
 
 const NOUN_BALANCE = 'balance';
 const NOUN_SPENDING = 'spending';
@@ -8,35 +10,29 @@ const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
 
 class MessageProcessService {
+  constructor() {
+    this.user = {
+      accountNumber: '90010000526'
+    };
+
+    const auth = new authService();
+    auth.runCommand({
+      username: 'alice'
+    }).then(user => {
+      this.user = user;
+    });
+  }
+
+
   process(rawMessage) {
     const message = rawMessage.toLowerCase();
     const sentences = this.seperatedSentence(message);
-
-    let commands = this.getCommands(sentences);
-
-    let promises = [];
-    for(let command of commands) {
-      promises.push(this.runCommand(command))
-    }
+    const commands = this.getCommands(sentences);
+    const promises = commands.map(command => this.runCommand(command));
 
     return Promise.all(promises).then(replyMessages => {
       return replyMessages.join('. ');
     });
-  }
-
-  _getCurrentBalance() {
-    return api.getCurrentBalance('90010000526').then(data => data.balance);
-  }
-
-  runBalanceCommand(command) {
-    switch(command.action) {
-      case ACTION_INFO:
-        return this._getCurrentBalance();
-        break;
-
-      case ACTION_SEND:
-        break;
-    }
   }
 
   runWeatherCommand(command) {
@@ -46,8 +42,10 @@ class MessageProcessService {
   runCommand(command) {
     switch(command.noun) {
       case NOUN_BALANCE: {
-        return this.runBalanceCommand(command);
+        const account = new accountService();
+        return account.runCommand(command);
       }
+      break;
 
       default:
         return this.runWeatherCommand(command);
@@ -67,9 +65,10 @@ class MessageProcessService {
   }
 
   getCommand(sentence) {
-    let noun = this.getNouns(sentence);
-    let action = this.getAction(sentence);
-    return { noun, action };
+    const noun = this.getNouns(sentence);
+    const action = this.getAction(sentence);
+    const user = this.user;
+    return { noun, action, user } ;
   }
 
   getNouns(sentence) {

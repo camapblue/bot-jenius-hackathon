@@ -1,6 +1,6 @@
 import AIRules from './AIRules';
 import constant from '../utils/constant';
-import MessageService from './MessageProcessService';
+import MessageService from './messageProcessService';
 
 import { fbTemplate } from 'claudia-bot-builder';
 
