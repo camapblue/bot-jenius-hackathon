@@ -8,7 +8,7 @@ class PatternMatch {
     this.patterns = temp;
   }
 
-  match(message) {
+  _detectPattern(message) {
     let found = null;
 
     for (let i = 0; i < this.patterns.length; i += 1) {
@@ -20,11 +20,17 @@ class PatternMatch {
       }
     }
 
+    return found;
+  }
+
+  match(message) {
+    const found = this._detectPattern(message);
+
     if (found) {
       return Promise.resolve(found(message));
     }
 
-    return Promise.resolve("I don't know what you say.");
+    return Promise.resolve("Hmm I am not sure I can understand you.");
   }
 }
 
