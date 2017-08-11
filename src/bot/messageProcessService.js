@@ -1,8 +1,11 @@
 import api from '../service/apiClient';
 import accountService from '../domain/accountService';
 import authService from '../domain/authService';
+import generalService from '../domain/generalService';
 
 const NOUN_BALANCE = 'balance';
+const NOUN_EXCHANGE_RATE = 'exchangeRate';
+const NOUN_SAVING_RATE = 'savingRate';
 const NOUN_SPENDING = 'spending';
 const NOUN_WEATHER = 'weather';
 
@@ -41,11 +44,16 @@ class MessageProcessService {
 
   runCommand(command) {
     switch(command.noun) {
-      case NOUN_BALANCE: {
+      case NOUN_BALANCE:
         const account = new accountService();
         return account.runCommand(command);
-      }
+
       break;
+
+      case NOUN_EXCHANGE_RATE:
+      case NOUN_SAVING_RATE:
+        const general = new generalService();
+        return general.runCommand(command);
 
       default:
         return this.runWeatherCommand(command);
@@ -74,6 +82,14 @@ class MessageProcessService {
   getNouns(sentence) {
     if (/(balance|current balance|current account|my money)/.test(sentence)) {
       return NOUN_BALANCE;
+    }
+
+    if (/(exchange rate|usd rate|foreign money rate|converation rate|convert rate)/.test(sentence)) {
+      return NOUN_EXCHANGE_RATE;
+    }
+
+    if (/(saving rate|saving interest|flexi saving rate|save rate|save interest)/.test(sentence)) {
+      return NOUN_SAVING_RATE;
     }
 
     return NOUN_WEATHER;
