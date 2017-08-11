@@ -1,4 +1,4 @@
-[
+const rulesJSON = [
   {
     "patterns": [
       "hi", "hello", "hello there"
@@ -17,4 +17,6 @@
     ],
     "random": false
   }
-]
+];
+
+export default rulesJSON;
