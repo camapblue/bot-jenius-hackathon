@@ -152,14 +152,16 @@ class TransferService {
 
   _selectAccount(data, session) {
     session.context = CONTEXT_SENDING_SELECT_USER_ACCOUNTS;
+
     const receiver = data[0];
     const { profile: { avatarUrl, firstName, lastName, phone, email }, accounts } = receiver;
     session.context_data = { ...session.context_data, receiver };
 
     const list = new fbTemplate.List();
-
     for(const account of accounts) {
       const { accountNumber } = account;
+      console.log('Add account', `${accountNumber}` + `${firstName} ${lastName} ${phone} ${email}`);
+
       list
         .addBubble(`${accountNumber}`, `${firstName} ${lastName} ${phone} ${email}`)
         .addImage(avatarUrl)
@@ -191,15 +193,19 @@ class TransferService {
     }
 
     if (session.context === CONTEXT_SENDING_SELECT_USER) {
+      session.context = null;
+
       const words = message.split('_');
       const username = words[1];
-      const { receivers, amount } = session.context_data;
+      const { receivers } = session.context_data;
       const receiver = receivers.filter(i => i.profile.username === username);
 
       return this._selectAccount(receiver, session);
     }
 
     if (session.context === CONTEXT_SENDING_SELECT_USER_ACCOUNTS) {
+      session.context = null;
+
       const words = message.split('_');
       const account = words[1];
       session.context_data = {

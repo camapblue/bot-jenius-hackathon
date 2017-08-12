@@ -33,13 +33,16 @@ class MessageProcessService {
     this.user = {
       accountNumber: '90010011012'
     };
+
+    // this.registerUser('hien');
   }
 
-  registerUser(username) {
+  registerUser(username, sender) {
     const auth = new authService();
     auth.runCommand({
       username
     }).then(user => {
+      this.sessions[sender] = { user, context: null };
       this.user = user;
     });
   }
@@ -56,7 +59,7 @@ class MessageProcessService {
     console.log('current session', currentSession.context);
     if (currentSession.context && currentSession.context.indexOf(CONTEXT_SENDING) !== -1) {
       const transfer = new transferService();
-      return transfer.runReplyCommand(message, currentSession);
+      return Promise.resolve(transfer.runReplyCommand(message, currentSession));
     }
 
     const sentences = this.seperatedSentence(message);
