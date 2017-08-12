@@ -14,7 +14,7 @@ const aiReply = (sender, text) => {
       typingOff(sender);
       return reply;
   });
-}
+};
 
 const typingOn = (sender) => {
   if (constant.isTesting) {
@@ -23,7 +23,7 @@ const typingOn = (sender) => {
   }
   const message = new fbTemplate.ChatAction('typing_on').get();
   fbReply(sender, message, constant.accessToken);
-}
+};
 
 const typingOff = (sender) => {
   if (constant.isTesting) {
@@ -31,7 +31,7 @@ const typingOff = (sender) => {
   }
   const message = new fbTemplate.ChatAction('typing_off').get();
   fbReply(sender, message, constant.accessToken);
-}
+};
 
 const botReply = message => {
   const { sender, text } = message;

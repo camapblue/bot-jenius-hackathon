@@ -61,12 +61,20 @@ class MessageProcessService {
   }
 
   getCommands(sentences) {
-    const commands = [];
+    let commands = [];
     for(let sentence of sentences) {
       if (sentence && sentence.length > 2) {
         const command = this.getCommand(sentence);
         commands.push(command);
       }
+    }
+
+    // filter only 1 WEATHER command
+    const weatherCommands = commands.filter(c => c.noun === NOUN_WEATHER);
+    if (weatherCommands.length > 0 && weatherCommands.length < commands.length) {
+      commands = commands.filter(c => c.noun !== NOUN_WEATHER);
+    } else if (weatherCommands.length > 1){
+      commands = [weatherCommands[0]];
     }
 
     return commands;
