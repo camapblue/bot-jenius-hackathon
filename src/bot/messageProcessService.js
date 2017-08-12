@@ -46,6 +46,8 @@ class MessageProcessService {
     let currentSession = this.sessions[sender];
     if (!currentSession) {
       currentSession = this.sessions[sender] = { user: this.user, context: null };
+    } else {
+      currentSession.user = this.user;
     }
 
     const message = rawMessage.toLowerCase();

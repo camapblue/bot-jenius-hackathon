@@ -4,6 +4,7 @@ const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
 
 const CONTEXT_SENDING = 'TRANSFER_MONEY';
+const CONTEXT_SENDING = 'TRANSFER_MONEY_SELECT_USER';
 const CONTEXT_SENDING_YES = 'YES';
 const CONTEXT_SENDING_NO = 'NO';
 
@@ -75,6 +76,7 @@ class TransferService {
   }
 
   runReplyCommand(message, session) {
+    session.context = null;
     if (message === CONTEXT_SENDING_YES.toLowerCase()) {
       const { amount, toAccount, fromAccount } = session.context_data;
       const command = {
@@ -86,8 +88,6 @@ class TransferService {
         .then(data => `Transferred money to account ${toAccount} already. good luck with it!`)
         .catch(data => `Seem account ${toAccount} doesn't exists. Please help checking it again.`);
     }
-
-    session.context = null;
     return Promise.resolve('You choose cancel transfer money.')
   }
 
