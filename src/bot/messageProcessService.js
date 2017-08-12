@@ -8,6 +8,7 @@ const NOUN_EXCHANGE_RATE = 'exchangeRate';
 const NOUN_SAVING_RATE = 'savingRate';
 const NOUN_SPENDING = 'spending';
 const NOUN_WEATHER = 'weather';
+const NOUN_TRANSACTION = 'transaction';
 
 const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
@@ -45,6 +46,7 @@ class MessageProcessService {
   runCommand(command) {
     switch(command.noun) {
       case NOUN_BALANCE:
+      case NOUN_TRANSACTION:
         const account = new accountService();
         return account.runCommand(command);
 
@@ -98,6 +100,10 @@ class MessageProcessService {
 
     if (/(saving rate|saving interest|flexi saving rate|save rate|save interest)/.test(sentence)) {
       return NOUN_SAVING_RATE;
+    }
+
+    if (/(transaction|my transactions|last payment|top transactions|my transactions|my payment)/.test(sentence)) {
+      return NOUN_TRANSACTION;
     }
 
     return NOUN_WEATHER;

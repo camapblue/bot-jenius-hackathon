@@ -1,0 +1,6225 @@
+[
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277382960",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277382961",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277382962",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277382963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277382963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INCOMING_TRANSFER",
+      "id": "101"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 65000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Morning Summer",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277382964",
+    "transactionTimestamp": 1494052715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277382965",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277382966",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277382967",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277382968",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277382969",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277382970",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277382971",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277382972",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277382973",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277382974",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010699927",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277382975",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277381960",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277381961",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277381962",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277381963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277381963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INCOMING_TRANSFER",
+      "id": "101"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 65000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Morning Summer",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277381964",
+    "transactionTimestamp": 1494052715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277381965",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277381966",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277381967",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277381968",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277381969",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277381970",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277381971",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277381972",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277381973",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277381974",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700322",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277381975",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277383960",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277383961",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277383962",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277383963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277383963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INCOMING_TRANSFER",
+      "id": "101"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 65000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Morning Summer",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277383964",
+    "transactionTimestamp": 1494052715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277383965",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277383966",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277383967",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277383968",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277383969",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277383970",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277383971",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277383972",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277383973",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277383974",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010700597",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277383975",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384960",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384961",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384962",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INCOMING_TRANSFER",
+      "id": "101"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 65000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Morning Summer",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384964",
+    "transactionTimestamp": 1494052715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277384965",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277384966",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277384967",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277384968",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277384969",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277384970",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277384971",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277384972",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277384973",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277384974",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702413",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277384975",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277385960",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277385961",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277385962",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277385963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277385963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INCOMING_TRANSFER",
+      "id": "101"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 65000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Morning Summer",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277385964",
+    "transactionTimestamp": 1494052715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277385965",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277385966",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277385967",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277385968",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277385969",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277385970",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277385971",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277385972",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277385973",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277385974",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010702545",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277385975",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277386960",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277386961",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277386962",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277386963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277386963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INCOMING_TRANSFER",
+      "id": "101"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 65000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Morning Summer",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277386964",
+    "transactionTimestamp": 1494052715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277386965",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277386966",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277386967",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277386968",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277386969",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277386970",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277386971",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277386972",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277386973",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277386974",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703827",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277386975",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277387960",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277387961",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277387962",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277387963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277387963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INCOMING_TRANSFER",
+      "id": "101"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 65000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Morning Summer",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277387964",
+    "transactionTimestamp": 1494052715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277387965",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277387966",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277387967",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277387968",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277387969",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277387970",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277387971",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277387972",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277387973",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277387974",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703907",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277387975",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277388960",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277388961",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277388962",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277388963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277388963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INCOMING_TRANSFER",
+      "id": "101"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 65000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Morning Summer",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277388964",
+    "transactionTimestamp": 1494052715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277388965",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277388966",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277388967",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277388968",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277388969",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277388970",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277388971",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277388972",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277388973",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277388974",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010703947",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "MX00000277388975",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "PX00000277388960",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "PX00000277388961",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "PX00000277388962",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "PX00000277388963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "PX00000277388963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INCOMING_TRANSFER",
+      "id": "101"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 65000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Morning Summer",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "PX00000277388964",
+    "transactionTimestamp": 1494052715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "PX00000277388965",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "PX00000277388966",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "PX00000277388967",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "PX00000277388968",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "PX00000277388969",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "PX00000277388970",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "PX00000277388971",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "PX00000277388972",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "PX00000277388973",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "PX00000277388974",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704007",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "PX00000277388975",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "JX00000277388960",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "JX00000277388961",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "JX00000277388962",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "JX00000277388963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "CASH_WITHDRAWAL",
+      "id": "105"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 90000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Cash withdrawal",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "JX00000277388963",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INCOMING_TRANSFER",
+      "id": "101"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 65000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Morning Summer",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "JX00000277388964",
+    "transactionTimestamp": 1494052715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "JX00000277388965",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "JX00000277388966",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "JX00000277388967",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "JX00000277388968",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "JX00000277388969",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "JX00000277388970",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "JX00000277388971",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "JX00000277388972",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "JX00000277388973",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "JX00000277388974",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": true,
+    "transactionType": {
+      "name": "CARD_TOPUP",
+      "id": "104"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 50000,
+    "partner": {
+      "identifier": "30794K",
+      "avatarUrl": null,
+      "name": "Top up bus card",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010704045",
+    "category": {
+      "name": "TRANSPORTATION",
+      "id": "4"
+    },
+    "transactionId": "JX00000277388975",
+    "transactionTimestamp": 1494051715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "true",
+    "transactionType": {
+      "name": "INCOMINGTR",
+      "id": "108"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 20000000,
+    "partner": {
+      "identifier": "RUDIGER1234567",
+      "avatarUrl": null,
+      "name": "INCOMINGTR",
+      "account": "00109063800",
+      "isJenius": "true"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201606090010DCUS240",
+    "transactionTimestamp": 1465485269000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 86086,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201705260010@@CI14114",
+    "transactionTimestamp": 1495843808000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 430432,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201705260010@@CI14109",
+    "transactionTimestamp": 1495843808000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 444478,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201704110010@@CI18074",
+    "transactionTimestamp": 1491876944000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 88896,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201704110010@@CI18079",
+    "transactionTimestamp": 1491876944000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 80243,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201703270010@@CI14177",
+    "transactionTimestamp": 1490779922000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 401217,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201703270010@@CI14172",
+    "transactionTimestamp": 1490779922000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 443903,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201702280010@@CI5287",
+    "transactionTimestamp": 1488360988000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 88781,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201702280010@@CI5292",
+    "transactionTimestamp": 1488360988000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "28 PAJAK",
+    "amount": 85282,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201607280010@@CI5417",
+    "transactionTimestamp": 1469780044000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "04  Bunga",
+    "amount": 426411,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201607280010@@CI5412",
+    "transactionTimestamp": 1469780044000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "28 PAJAK",
+    "amount": 88183,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201608260010@@CI14489",
+    "transactionTimestamp": 1472284608000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "04  Bunga",
+    "amount": 440914,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201608260010@@CI14484",
+    "transactionTimestamp": 1472284608000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "28 PAJAK",
+    "amount": 85454,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201610280010@@CI5304",
+    "transactionTimestamp": 1477733031000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "04  Bunga",
+    "amount": 427269,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201610280010@@CI5299",
+    "transactionTimestamp": 1477733031000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "28 PAJAK",
+    "amount": 88360,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201611280010@@CI5311",
+    "transactionTimestamp": 1480412366000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "04  Bunga",
+    "amount": 441801,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201611280010@@CI5306",
+    "transactionTimestamp": 1480412366000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "28 PAJAK",
+    "amount": 88242,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201609280010@@CI5306",
+    "transactionTimestamp": 1475099624000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "04  Bunga",
+    "amount": 441212,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201609280010@@CI5301",
+    "transactionTimestamp": 1475099624000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INCOMINGTR",
+      "id": "108"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 5000,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "Baru Lagi",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201606140010DCUS236",
+    "transactionTimestamp": 1465916401000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INCOMINGTR",
+      "id": "108"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 500000000,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "RUDIGER",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "Mobile & Internet",
+      "id": "11"
+    },
+    "transactionId": "201606100010DCUS254",
+    "transactionTimestamp": 1465572505000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 88896,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201704280010@@CI5311",
+    "transactionTimestamp": 1493417988000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 444478,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201704280010@@CI5306",
+    "transactionTimestamp": 1493417988000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 88697,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201701270010@@CI14240",
+    "transactionTimestamp": 1485660066000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 443485,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201701270010@@CI14235",
+    "transactionTimestamp": 1485660066000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 85568,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201612280010@@CI5311",
+    "transactionTimestamp": 1483000750000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 427839,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201612280010@@CI5306",
+    "transactionTimestamp": 1483000750000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "true",
+    "transactionType": {
+      "name": "INCOMINGTR",
+      "id": "108"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 20000000,
+    "partner": {
+      "identifier": "RUDIGER1234567",
+      "avatarUrl": null,
+      "name": "INCOMINGTR",
+      "account": "00109063800",
+      "isJenius": "true"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201606090010DCUS2401",
+    "transactionTimestamp": 1465485269000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 86086,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201705260010@@CI141141",
+    "transactionTimestamp": 1495843808000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 430432,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201705260010@@CI141091",
+    "transactionTimestamp": 1495843808000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 444478,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201704110010@@CI180741",
+    "transactionTimestamp": 1491876944000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 88896,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201704110010@@CI180791",
+    "transactionTimestamp": 1491876944000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 80243,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201703270010@@CI141771",
+    "transactionTimestamp": 1490779922000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 401217,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201703270010@@CI141721",
+    "transactionTimestamp": 1490779922000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 443903,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201702280010@@CI52871",
+    "transactionTimestamp": 1488360988000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 88781,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201702280010@@CI52921",
+    "transactionTimestamp": 1488360988000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "28 PAJAK",
+    "amount": 85282,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201607280010@@CI54171",
+    "transactionTimestamp": 1469780044000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "04  Bunga",
+    "amount": 426411,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201607280010@@CI54121",
+    "transactionTimestamp": 1469780044000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "28 PAJAK",
+    "amount": 88183,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201608260010@@CI144891",
+    "transactionTimestamp": 1472284608000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "04  Bunga",
+    "amount": 440914,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201608260010@@CI144841",
+    "transactionTimestamp": 1472284608000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "28 PAJAK",
+    "amount": 85454,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201610280010@@CI53041",
+    "transactionTimestamp": 1477733031000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "04  Bunga",
+    "amount": 427269,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201610280010@@CI52991",
+    "transactionTimestamp": 1477733031000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "28 PAJAK",
+    "amount": 88360,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201611280010@@CI53111",
+    "transactionTimestamp": 1480412366000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "04  Bunga",
+    "amount": 441801,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201611280010@@CI53061",
+    "transactionTimestamp": 1480412366000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "28 PAJAK",
+    "amount": 88242,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201609280010@@CI53061",
+    "transactionTimestamp": 1475099624000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "04  Bunga",
+    "amount": 441212,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201609280010@@CI53011",
+    "transactionTimestamp": 1475099624000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INCOMINGTR",
+      "id": "108"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 5000,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "Baru Lagi",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201606140010DCUS2361",
+    "transactionTimestamp": 1465916401000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INCOMINGTR",
+      "id": "108"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 500000000,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "RUDIGER",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "Mobile & Internet",
+      "id": "11"
+    },
+    "transactionId": "201606100010DCUS2541",
+    "transactionTimestamp": 1465572505000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 88896,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201704280010@@CI53111",
+    "transactionTimestamp": 1493417988000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 444478,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201704280010@@CI53061",
+    "transactionTimestamp": 1493417988000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 88697,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201701270010@@CI142401",
+    "transactionTimestamp": 1485660066000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 443485,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201701270010@@CI142351",
+    "transactionTimestamp": 1485660066000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "TAXINTERST",
+      "id": "115"
+    },
+    "node": "13 Pajak",
+    "amount": 85568,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "TAXINTERST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201612280010@@CI53111",
+    "transactionTimestamp": 1483000750000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": "false",
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "05 Bunga",
+    "amount": 427839,
+    "partner": {
+      "identifier": "cashtag",
+      "avatarUrl": null,
+      "name": "INTEREST",
+      "account": "90010011446",
+      "isJenius": "false"
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "201612280010@@CI53061",
+    "transactionTimestamp": 1483000750000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "BILL_PAYMENT",
+      "id": "103"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 10000,
+    "partner": {
+      "identifier": "CIFalice",
+      "avatarUrl": null,
+      "name": "Monthly internet payment",
+      "account": "A88366629103",
+      "isJenius": false
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "MOBILE_INTERNET",
+      "id": "3"
+    },
+    "transactionId": "MX00000277384000",
+    "transactionTimestamp": 1496308557000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INCOMING_TRANSFER",
+      "id": "101"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 70000,
+    "partner": {
+      "identifier": "CIFalice",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Julia March",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "CHILDREN",
+      "id": "2"
+    },
+    "transactionId": "MX00000277384001",
+    "transactionTimestamp": 1491038157000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "BILL_PAYMENT",
+      "id": "103"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 10000,
+    "partner": {
+      "identifier": "CIFalice",
+      "avatarUrl": null,
+      "name": "Monthly internet payment",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "MOBILE_INTERNET",
+      "id": "3"
+    },
+    "transactionId": "MX00000277384002",
+    "transactionTimestamp": 1494148557000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "OUTGOING_TRANSFER",
+      "id": "102"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 10000,
+    "partner": {
+      "identifier": "CIFalice",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Friend One",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384003",
+    "transactionTimestamp": 1462612557000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "OUTGOING_TRANSFER",
+      "id": "102"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 10000,
+    "partner": {
+      "identifier": "CIFalice",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Friend One",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384004",
+    "transactionTimestamp": 1462612557000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "OUTGOING_TRANSFER",
+      "id": "102"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 10000,
+    "partner": {
+      "identifier": "CIFalice",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Friend One",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384005",
+    "transactionTimestamp": 1462612557000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "OUTGOING_TRANSFER",
+      "id": "102"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 10000,
+    "partner": {
+      "identifier": "CIFalice",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Friend One",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384006",
+    "transactionTimestamp": 1462612557000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "OUTGOING_TRANSFER",
+      "id": "102"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 10000,
+    "partner": {
+      "identifier": "CIFalice",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Friend One",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384007",
+    "transactionTimestamp": 1462612557000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "OUTGOING_TRANSFER",
+      "id": "102"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 10000,
+    "partner": {
+      "identifier": "CIFalice",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Friend One",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384008",
+    "transactionTimestamp": 1462612557000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "OUTGOING_TRANSFER",
+      "id": "102"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 10000,
+    "partner": {
+      "identifier": "CIFalice",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Friend One",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384009",
+    "transactionTimestamp": 1462612557000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "OUTGOING_TRANSFER",
+      "id": "102"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 10000,
+    "partner": {
+      "identifier": "CIFalice",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Friend One",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384010",
+    "transactionTimestamp": 1462612557000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "OUTGOING_TRANSFER",
+      "id": "102"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 10000,
+    "partner": {
+      "identifier": "CIFalice",
+      "avatarUrl": "https://akimg2.ask.fm/assets/371/538/855/normal/001_ma.jpg",
+      "name": "Friend One",
+      "account": "A88366629103",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000606",
+    "category": {
+      "name": "UNCATEGORIZED",
+      "id": "18"
+    },
+    "transactionId": "MX00000277384011",
+    "transactionTimestamp": 1462612557000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 5500,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Maxi Saver Interest",
+      "account": "9001DJI000507",
+      "isJenius": true
+    },
+    "fee": 1345,
+    "accountNumber": "90010012538",
+    "category": {
+      "name": "Income",
+      "id": "8"
+    },
+    "transactionId": "MX00001212121211",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "Tax On Interest",
+      "id": "122"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 511,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Tax on Maxi Saver Interest",
+      "account": "9001DJI000507",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010012538",
+    "category": {
+      "name": "Taxes",
+      "id": "19"
+    },
+    "transactionId": "MX00001212121212",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "Principal Placement",
+      "id": "119"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 11000000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Maxi Saver 1",
+      "account": "9001DJI000507",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010012538",
+    "category": {
+      "name": "SAVING",
+      "id": "14"
+    },
+    "transactionId": "MX00001212121213",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "Principal Repayment",
+      "id": "120"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 11000000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Maxi Saver 1",
+      "account": "9001DJI000507",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010012538",
+    "category": {
+      "name": "SAVING",
+      "id": "14"
+    },
+    "transactionId": "MX00001212121214",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "INTEREST",
+      "id": "110"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 1100,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Maxi Saver Interest",
+      "account": "9001DJI000607",
+      "isJenius": true
+    },
+    "fee": 1345,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "Income",
+      "id": "8"
+    },
+    "transactionId": "MX00001212121211",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "Tax On Interest",
+      "id": "122"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 110,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Tax on Maxi Saver Interest",
+      "account": "9001DJI000607",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "Taxes",
+      "id": "19"
+    },
+    "transactionId": "MX00001212121212",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "Principal Placement",
+      "id": "119"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 19000000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Maxi Saver 1",
+      "account": "9001DJI000607",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "SAVING",
+      "id": "14"
+    },
+    "transactionId": "MX00001212121213",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "DEBIT"
+  },
+  {
+    "isInternal": false,
+    "transactionType": {
+      "name": "Principal Repayment",
+      "id": "120"
+    },
+    "node": "This is node sample for transaction",
+    "amount": 19000000,
+    "partner": {
+      "identifier": "3080D3",
+      "avatarUrl": null,
+      "name": "Maxi Saver 1",
+      "account": "9001DJI000607",
+      "isJenius": true
+    },
+    "fee": 500,
+    "accountNumber": "90010000605",
+    "category": {
+      "name": "SAVING",
+      "id": "14"
+    },
+    "transactionId": "MX00001212121214",
+    "transactionTimestamp": 1494050715000,
+    "debitCredit": "CREDIT"
+  },
+  {
+    "id": "201707109001DCUS483",
+    "type": "EG",
+    "txnCode": "010",
+    "timestamp": "2017-07-10-10.42.17.768000",
+    "postingDate": "20170710",
+    "accountId": "90010012538",
+    "accountType": "EG",
+    "customerId": "4004UK",
+    "transactionId": "201707109001DCUS483",
+    "referenceNumber": "75792",
+    "transactionCodeDescription": "08  Debit",
+    "amount": 988,
+    "currency": "IDR",
+    "balance": 100000000,
+    "operation": "I",
+    "creditDebitIndicator": "debit",
+    "blocked": "N",
+    "custNumber": "4004UK",
+    "suffix": "100",
+    "SUVFR": "20170710",
+    "sundryRef": "",
+    "userCode1": "",
+    "userCode2": "",
+    "customerType": "04",
+    "beneficiary": {},
+    "narratives": {
+      "narrative1": "",
+      "narrative2": "",
+      "narrative3": "",
+      "narrative4": ""
+    },
+    "extendedData": {
+      "ext_hidden": null,
+      "ext_timestamp": "2017-07-10-10.42.17.768000",
+      "extendedNarrative1": "",
+      "extendedNarrative2": "",
+      "extendedNarrative3": "",
+      "extendedNarrative4": ""
+    }
+  },
+  {
+    "id": "201707109001DCUS489",
+    "type": "EG",
+    "txnCode": "010",
+    "timestamp": "2017-07-10-11.02.12.181000",
+    "postingDate": "20170710",
+    "accountId": "90010012538",
+    "accountType": "EG",
+    "customerId": "4004UK",
+    "transactionId": "201707109001DCUS489",
+    "referenceNumber": "19537",
+    "transactionCodeDescription": "08  Debit",
+    "amount": 988,
+    "currency": "IDR",
+    "balance": 100000000,
+    "operation": "I",
+    "creditDebitIndicator": "debit",
+    "blocked": "N",
+    "custNumber": "4004UK",
+    "suffix": "100",
+    "SUVFR": "20170710",
+    "sundryRef": "",
+    "userCode1": "",
+    "userCode2": "",
+    "customerType": "04",
+    "beneficiary": {},
+    "narratives": {
+      "narrative1": "",
+      "narrative2": "",
+      "narrative3": "",
+      "narrative4": ""
+    },
+    "extendedData": {
+      "ext_hidden": null,
+      "ext_timestamp": "2017-07-10-11.02.12.181000",
+      "extendedNarrative1": "",
+      "extendedNarrative2": "",
+      "extendedNarrative3": "",
+      "extendedNarrative4": ""
+    }
+  },
+  {
+    "id": "201707119001@@MM37",
+    "type": "EG",
+    "txnCode": "610",
+    "timestamp": "2017-07-11-11.11.15.862000",
+    "postingDate": "20170711",
+    "accountId": "90010012538",
+    "accountType": "EG",
+    "customerId": "4004UK",
+    "transactionId": "201707119001@@MM37",
+    "referenceNumber": "DJI9001DJI000783",
+    "transactionCodeDescription": "Deposit Repayment",
+    "amount": 15480000,
+    "currency": "IDR",
+    "balance": 100000000,
+    "operation": "I",
+    "creditDebitIndicator": "credit",
+    "blocked": "N",
+    "custNumber": "4004UK",
+    "suffix": "100",
+    "SUVFR": "20170711",
+    "sundryRef": "",
+    "userCode1": "",
+    "userCode2": "",
+    "customerType": "04",
+    "beneficiary": {},
+    "narratives": {
+      "narrative1": "",
+      "narrative2": "",
+      "narrative3": "",
+      "narrative4": ""
+    },
+    "extendedData": {
+      "ext_hidden": null,
+      "ext_timestamp": "2017-07-11-11.11.15.862000",
+      "extendedNarrative1": "",
+      "extendedNarrative2": "",
+      "extendedNarrative3": "",
+      "extendedNarrative4": ""
+    }
+  }
+]
