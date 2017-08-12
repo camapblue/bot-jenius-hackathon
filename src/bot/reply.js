@@ -8,7 +8,7 @@ const fbReply = require('../service/fbService');
 const messageProcessor = new MessageService();
 
 const aiReply = (sender, text) => {
-  return messageProcessor.process(text)
+  return messageProcessor.process(text, sender)
   .then((reply) => {
     typingOff(sender);
     return reply;
@@ -32,9 +32,9 @@ const typingOff = (sender) => {
   fbReply(sender, message, constant.accessToken);
 };
 
-const registerLoggedInUser = (username) => {
-  messageProcessor.registerUser(username)
-}
+const registerLoggedInUser = (username, sender) => {
+
+};
 
 const botReply = message => {
   const { sender, text } = message;
@@ -50,8 +50,8 @@ const botReply = message => {
 
   const { status, authorization_code } = account_linking;
   if (status === 'linked') {
-    registerLoggedInUser(authorization_code);
-    return Promise.resolve(`Hi ${authorization_code}, you've linked to Jenius account successful.`);
+    return messageProcessor.registerUser(authorization_code, sender)
+      .then(i => `Hi ${authorization_code}, you've linked to Jenius account successful.`);
   }
 };
 

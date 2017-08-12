@@ -14,10 +14,14 @@ const getCurrentBalance = accountNumber => callApi('post', 'show-balance', null,
 const getUser = username => callApi('get', 'users/'+ username);
 const transferAmount = (ownerAccountNumber, partnerAccountNumber, amount) => callApi('post', 'actions/transfer-money', null, { ownerAccountNumber, partnerAccountNumber, amount });
 const findUser = text => callApi('get', 'users', 'firstName=' + text);
+const saveData = data => callApi('post', 'storage/save-data', null, data);
+const getData = id => callApi('get', 'storage/get-data/' + id);
 
 export default {
   getCurrentBalance,
   getUser,
   transferAmount,
-  findUser
+  findUser,
+  saveData,
+  getData
 }
