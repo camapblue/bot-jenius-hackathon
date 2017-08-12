@@ -186,7 +186,7 @@ class TransferService {
       session.context = null;
 
       if (message === CONTEXT_SENDING_YES.toLowerCase()) {
-        return this._transferToAccount(session);
+        return Promise.resolve(this._transferToAccount(session));
       }
 
       return Promise.resolve('You choose cancel transfer money.');

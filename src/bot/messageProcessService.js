@@ -6,6 +6,8 @@ import transactionService from '../domain/transactionService';
 import greetingService from "../domain/greetingService";
 import transferService from "../domain/transferService";
 import constant from '../utils/constant';
+const fbReply = require('../service/fbService');
+
 
 const NOUN_BALANCE = 'balance';
 const NOUN_EXCHANGE_RATE = 'exchangeRate';
@@ -115,10 +117,22 @@ class MessageProcessService {
       currentSession.context.indexOf(CONTEXT_SENDING) !== -1) {
 
       const transfer = new transferService();
-      return Promise.resolve(transfer.runReplyCommand(message, currentSession)).then(m => {
+      return transfer.runReplyCommand(message, currentSession).then(m => {
+        // fbReply(sender, 'Btw, with your current spending pace, you might not make it until the next payday :(', constant.accessToken);
+
+        setTimeout(() => {
+          fbReply(sender, 'Btw, with your current spending\n' +
+            'pace, you might not make it\n' +
+            'until the next payday :(', constant.accessToken);
+        }, 1000);
+
         if (m.indexOf('Transferred money to account') !== -1) {
-          return this.registerUser(currentSession.username, sender).then(() => m);
+          return this.registerUser(currentSession.username, currentSession.sender)
+            .then(() => m)
+
         }
+
+        return m;
       });
     }
 

@@ -16,18 +16,18 @@ const aiReply = (sender, text) => {
 };
 
 const typingOn = (sender) => {
-  if (constant.isTesting) {
-    console.log('typing...');
-    return;
-  }
+  // if (constant.isTesting) {
+  //   console.log('typing...');
+  //   return;
+  // }
   const message = new fbTemplate.ChatAction('typing_on').get();
   fbReply(sender, message, constant.accessToken);
 };
 
 const typingOff = (sender) => {
-  if (constant.isTesting) {
-    return;
-  }
+  // if (constant.isTesting) {
+  //   return;
+  // }
   const message = new fbTemplate.ChatAction('typing_off').get();
   fbReply(sender, message, constant.accessToken);
 };
