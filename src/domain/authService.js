@@ -3,12 +3,28 @@ const transactions = require('../data/transactions');
 
 class AuthService {
   runCommand(command) {
-    const { username } = command;
-    return this._getUser(username);
+    const { username, sender } = command;
+    return this._getUser(username).then(data => this._saveData(sender, data));
+  }
+
+  _saveData(sender, userData) {
+    const postData = {
+      id: sender,
+      data: {
+        user: userData,
+        context: null
+      }
+    };
+
+    return api.saveData(postData);
   }
 
   _getUser(username) {
-    return api.getUser(username).then(data => this._loadTransactions(data));
+    return api.getUser(username);
+  }
+
+  getData(sender) {
+    return api.getData(sender);
   }
 
   _loadTransactions(userData) {

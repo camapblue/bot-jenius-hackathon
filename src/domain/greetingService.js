@@ -21,7 +21,7 @@ class greetingService {
 
   _getRandom(max) {
     const top = max ? max : 3;
-    return Math.round(Math.random()*top) + 1;
+    return Math.round(Math.random()*top);
   }
 
   answerHi(command) {
