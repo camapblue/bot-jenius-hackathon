@@ -4,7 +4,8 @@ import { fbTemplate } from 'claudia-bot-builder';
 const ACTION_LINK = 'link';
 const NOUN_ACCOUNT = 'account';
 
-const FRONTEND_URL = 'https://jenius-hackathon-bot-login.herokuapp.com/';
+const FRONTEND_URL = 'https://jenius-hackathon-bot-login.herokuapp.com';
+const REDIRECT_URI = 'https://b4vritvu47.execute-api.ap-southeast-1.amazonaws.com/latest/facebook';
 
 class LinkService {
   _getAccountLink() {
@@ -14,17 +15,18 @@ class LinkService {
         payload: {
           template_type: 'generic',
           elements: [{
-            title: 'Welcome to Account Linking',
+            title: 'Link to your Jenius account',
             image_url: FRONTEND_URL + '/linking.png',
             buttons: [{
               type: 'account_link',
-              url: FRONTEND_URL
+              title: 'Log In        ',
+              url: FRONTEND_URL + '?redirect_uri=' + encodeURIComponent(REDIRECT_URI)
             }]
           }]
         }
       }
     }; 
-    console.log('Message =', message);
+    // console.log('Message =', JSON.stringify(message));
     return message;
   }
 
