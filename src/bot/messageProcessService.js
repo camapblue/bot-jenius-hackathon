@@ -2,6 +2,7 @@ import api from '../service/apiClient';
 import accountService from '../domain/accountService';
 import authService from '../domain/authService';
 import generalService from '../domain/generalService';
+import transactionService from '../domain/transactionService';
 
 const NOUN_BALANCE = 'balance';
 const NOUN_EXCHANGE_RATE = 'exchangeRate';
@@ -46,11 +47,12 @@ class MessageProcessService {
   runCommand(command) {
     switch(command.noun) {
       case NOUN_BALANCE:
-      case NOUN_TRANSACTION:
         const account = new accountService();
         return account.runCommand(command);
 
-      break;
+      case NOUN_TRANSACTION:
+        const transaction = new transactionService();
+        return transaction.runCommand(command);
 
       case NOUN_EXCHANGE_RATE:
       case NOUN_SAVING_RATE:
