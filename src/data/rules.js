@@ -1,7 +1,7 @@
 const rulesJSON = [
   {
     "patterns": [
-      "hi", "hello", "hello there"
+      "hi", "hello", "hello there", "hey"
     ],
     "replies": [
       "hi there. I'm bot.", "hi, I'm bot."

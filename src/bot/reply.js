@@ -11,8 +11,8 @@ const messageProcessor = new MessageService();
 const aiReply = (sender, text) => {
   return messageProcessor.process(text)
   .then((reply) => {
-      typingOff(sender);
-      return reply;
+    typingOff(sender);
+    return reply;
   });
 }
 

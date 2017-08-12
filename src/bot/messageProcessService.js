@@ -2,6 +2,7 @@ import api from '../service/apiClient';
 import accountService from '../domain/accountService';
 import authService from '../domain/authService';
 import generalService from '../domain/generalService';
+import linkService from '../domain/linkService';
 
 const NOUN_BALANCE = 'balance';
 const NOUN_EXCHANGE_RATE = 'exchangeRate';
@@ -11,6 +12,9 @@ const NOUN_WEATHER = 'weather';
 
 const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
+
+const ACTION_LINK = 'link';
+const NOUN_ACCOUNT = 'account';
 
 class MessageProcessService {
   constructor() {
@@ -55,6 +59,10 @@ class MessageProcessService {
         const general = new generalService();
         return general.runCommand(command);
 
+      case NOUN_ACCOUNT:
+        const link = new linkService();
+        return link.runCommand(command);
+
       default:
         return this.runWeatherCommand(command);
     }
@@ -92,6 +100,10 @@ class MessageProcessService {
       return NOUN_SAVING_RATE;
     }
 
+    if (/(account)/.test(sentence)) {
+      return NOUN_ACCOUNT;
+    }
+
     return NOUN_WEATHER;
   }
 
@@ -102,6 +114,10 @@ class MessageProcessService {
 
     if (/(send|transfer|give)/.test(sentence)) {
       return ACTION_SEND;
+    }
+
+    if (/(link)/.test(sentence)) {
+      return ACTION_LINK;
     }
 
     return ACTION_INFO;
