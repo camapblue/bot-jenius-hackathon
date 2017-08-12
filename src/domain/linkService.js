@@ -4,8 +4,7 @@ import { fbTemplate } from 'claudia-bot-builder';
 const ACTION_LINK = 'link';
 const NOUN_ACCOUNT = 'account';
 
-const FRONTEND_URL = 'https://jenius-hackathon-bot-login.herokuapp.com';
-const REDIRECT_URI = 'https://b4vritvu47.execute-api.ap-southeast-1.amazonaws.com/latest/facebook?access_token=UrhwukcTj0s';
+const FRONTEND_URL = 'https://jenius-hackathon-bot-login.herokuapp.com/index.html';
 
 class LinkService {
   _getAccountLink() {
@@ -19,7 +18,7 @@ class LinkService {
             image_url: FRONTEND_URL + '/linking.png',
             buttons: [{
               type: 'account_link',
-              url: FRONTEND_URL + '?redirect_uri=' + encodeURIComponent(REDIRECT_URI)
+              url: FRONTEND_URL
             }]
           }]
         }
