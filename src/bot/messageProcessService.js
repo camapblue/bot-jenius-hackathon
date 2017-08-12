@@ -40,6 +40,8 @@ class MessageProcessService {
     const promises = commands.map(command => this.runCommand(command));
 
     return Promise.all(promises).then(replyMessages => {
+      if (replyMessages.length === 1) return replyMessages[0];
+
       return replyMessages.join('. ');
     });
   }
