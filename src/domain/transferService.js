@@ -117,7 +117,7 @@ class TransferService {
           list
             .addBubble(`${firstName} ${lastName}`, `${phone} ${email}`)
             .addImage(avatarUrl)
-            .addButton('Select', 'PICK_' + username)
+            .addButton('Send', 'PICK_' + username)
         }
 
 
@@ -135,7 +135,7 @@ class TransferService {
           list
             .addBubble(`${accountNumber}`, `${firstName} ${lastName} ${phone} ${email}`)
             .addImage(avatarUrl)
-            .addButton('Select', 'PICK_' + username)
+            .addButton('Send', 'PICK_' + username)
         }
 
         return list.get();
