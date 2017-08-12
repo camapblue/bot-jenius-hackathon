@@ -1,5 +1,5 @@
 import api from '../service/apiClient';
-const transactions = require('../data/transactions.json');
+const transactions = require('../data/transactions');
 
 class AuthService {
   runCommand(command) {
