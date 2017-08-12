@@ -22,14 +22,21 @@ class GeneralService {
 
   getExchangeRate() {
     const { exchangeRate: { USD_IDR, USD_VND, IDR_VND } } = this.genericInfo;
-    const message = `The current exchange rate: \n USD - IDR: ${USD_IDR}\n USD - VND: ${USD_VND}\n IDR - VND: ${IDR_VND}`;
+    const message = `Here is what I know:
 
+🇺🇸 USD - 🇮🇩 IDR: ${USD_IDR}
+🇺🇸 USD - 🇻🇳 VND: ${USD_VND}
+🇮🇩 IDR - 🇻🇳 VND: ${IDR_VND}
+`;
     return Promise.resolve(message)
   }
 
   getSavingInfo() {
-    const { savingRate: { maxiSaver, flexiSaver, dreamSaver } } = this.genericInfo;
-    const message = `The saving rate: \n - Maxi Saver: ${maxiSaver}\n - Flexi Saver: ${flexiSaver}\n - Dream Saver: ${dreamSaver}`;
+    const { savingRate: { maxiSaver, flexiSaver } } = this.genericInfo;
+    const message = `I'm glad you ask this, this is one of the big benefit on using Jenius! 💰
+
+Flexi & Dream Saver flat rate is ${flexiSaver} p.a.
+Maxi Saver maximum rate is ${maxiSaver}% p.a.`;
 
     return Promise.resolve(message)
   }
