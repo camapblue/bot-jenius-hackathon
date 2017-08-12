@@ -29,11 +29,6 @@ const ACTION_LINK = 'link';
 class MessageProcessService {
   constructor() {
     this.sessions = { };
-
-    this.user = {
-      accountNumber: '90010011012'
-    };
-
     // this.registerUser('hien');
   }
 
@@ -43,21 +38,23 @@ class MessageProcessService {
       username
     }).then(user => {
       this.sessions[sender] = { user, context: null };
-      this.user = user;
     });
   }
 
   process(rawMessage, sender) {
-    let currentSession = this.sessions[sender];
-    if (!currentSession) {
-      currentSession = this.sessions[sender] = { user: this.user, context: null };
-    } else {
-      currentSession.user = this.user;
-    }
-
     const message = rawMessage.toLowerCase();
-    console.log('current session', currentSession.context);
-    if (currentSession.context && currentSession.context.indexOf(CONTEXT_SENDING) !== -1) {
+    let currentSession = this.sessions[sender];
+
+    if (!currentSession) {
+      currentSession = {
+        user: { profile: { firstName: 'friend' }},
+        context: null
+      };
+
+      this.sessions[sender]= currentSession;
+    }
+    if (currentSession.context &&
+      currentSession.context.indexOf(CONTEXT_SENDING) !== -1) {
       const transfer = new transferService();
       return Promise.resolve(transfer.runReplyCommand(message, currentSession));
     }
