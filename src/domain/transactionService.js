@@ -12,7 +12,7 @@ class TransactionService {
 
     const { user, sentence } = command;
     const numbers = sentence.match(/\d+/);
-    if (numbers.length > 0) {
+    if (numbers && numbers.length > 0) {
       number = numbers[0];
     }
 
