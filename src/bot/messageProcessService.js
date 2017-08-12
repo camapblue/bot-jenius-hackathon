@@ -3,6 +3,7 @@ import accountService from '../domain/accountService';
 import authService from '../domain/authService';
 import generalService from '../domain/generalService';
 import transactionService from '../domain/transactionService';
+import greetingService from "../domain/greetingService";
 
 const NOUN_BALANCE = 'balance';
 const NOUN_EXCHANGE_RATE = 'exchangeRate';
@@ -10,6 +11,8 @@ const NOUN_SAVING_RATE = 'savingRate';
 const NOUN_SPENDING = 'spending';
 const NOUN_WEATHER = 'weather';
 const NOUN_TRANSACTION = 'transaction';
+const NOUN_HI = 'sayHi';
+const NOUN_HOW = 'sayHow';
 
 const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
@@ -59,6 +62,11 @@ class MessageProcessService {
         const general = new generalService();
         return general.runCommand(command);
 
+      case NOUN_HI:
+      case NOUN_HOW:
+        const greeting = new greetingService();
+        return greeting.runCommand(command);
+
       default:
         return this.runWeatherCommand(command);
     }
@@ -67,7 +75,7 @@ class MessageProcessService {
   getCommands(sentences) {
     let commands = [];
     for(let sentence of sentences) {
-      if (sentence && sentence.length > 2) {
+      if (sentence && (sentence.length > 2 || sentence === 'hi')) {
         const command = this.getCommand(sentence);
         commands.push(command);
       }
@@ -107,6 +115,14 @@ class MessageProcessService {
 
     if (/(transaction|my transactions|last payment|top transactions|my transactions|my payment)/.test(sentence)) {
       return NOUN_TRANSACTION;
+    }
+
+    if (/(hi|hello|good morning|good evening|good afternoon|afternoon|morning|evening)/.test(sentence)) {
+      return NOUN_HI;
+    }
+
+    if (/(how are you|are you ok|are you good|do you have a good day|is everything ok)/.test(sentence)) {
+      return NOUN_HOW;
     }
 
     return NOUN_WEATHER;
