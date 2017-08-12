@@ -19,7 +19,7 @@ class TransactionService {
     return number;
   }
 
-  _getTopTransaction(user,number) {
+  _getTopTransaction(user, number) {
     const transactions = user.transactions.slice(0, number);
 
     let content = 'Your transaction is: \n';

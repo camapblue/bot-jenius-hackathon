@@ -25,8 +25,8 @@ class greetingService {
   }
 
   answerHi(command) {
-    const { user: { profile: { lastName } } } = command;
-    const fullName = `${lastName}`;
+    const { user: { profile: { firstName } } } = command;
+    const fullName = `${firstName}`;
 
     const { sayHi } = this.greetingInfo;
     const message = sayHi[this._getRandom()].replace('$name', fullName);
@@ -35,8 +35,8 @@ class greetingService {
   }
 
   answerHow(command) {
-    const { user: { profile: { lastName } } } = command;
-    const fullName = `${lastName}`;
+    const { user: { profile: { firstName } } } = command;
+    const fullName = `${firstName}`;
 
     const { sayHow } = this.greetingInfo;
     const message = sayHow[this._getRandom()].replace('$name', fullName);

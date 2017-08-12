@@ -16,6 +16,7 @@ class AuthService {
     const trans = transactions.filter(t => tranIds.indexOf(t.transactionId) >= 0);
     userData.transactions = trans.sort(t => t.transactionTimestamp);
     return userData;
+
   }
 }
 

@@ -10,10 +10,10 @@ const NOUN_ACCOUNT = 'account';
 
 class AccountService {
   _getCurrentBalance(user) {
-    const { profile: { lastName } } = user;
+    const { profile: { firstName } } = user;
 
     const account = user.accounts.find(a => a.type === 'PRIMARY_ACCOUNT');
-    return Promise.resolve(`Hi ${lastName}, your Active Balance is ${account.balance} ${account.currency} 👍`);
+    return Promise.resolve(`Hi ${firstName}, your Active Balance is ${account.balance} ${account.currency} 👍`);
   }
 
   _sendMoney(user, toAccount, amount) {
@@ -21,15 +21,15 @@ class AccountService {
   }
 
   _getAllSaving(user) {
-    const { profile: { lastName } } = user;
+    const { profile: { firstName } } = user;
     const accountsStr = user.accounts.map(a => `\n - Account "${a.name}" is ${a.balance} ${a.currency}`).join('');
-    return Promise.resolve(`Hi ${lastName}, ${accountsStr} 👍`);
+    return Promise.resolve(`Hi ${firstName}, ${accountsStr} 👍`);
   }
 
   _getAllAccount(user) {
-    const { profile: { lastName } } = user;
+    const { profile: { firstName } } = user;
     const accountsStr = user.accounts.map(a => `\n - Account "${a.name}" is ${a.balance} ${a.currency}`).join('');
-    return Promise.resolve(`Hi ${lastName}, ${accountsStr} 👍`);
+    return Promise.resolve(`Hi ${firstName}, ${accountsStr} 👍`);
   }
 
   runCommand(command) {

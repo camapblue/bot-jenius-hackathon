@@ -31,7 +31,7 @@ class MessageProcessService {
 
     const auth = new authService();
     auth.runCommand({
-      username: 'alice'
+      username: 'hien'
     }).then(user => {
       this.user = user;
     });
@@ -59,8 +59,13 @@ class MessageProcessService {
     switch(command.noun) {
       case NOUN_BALANCE:
       case NOUN_ACCOUNT:
-        const account = new accountService();
-        return account.runCommand(command);
+        if (command.action === ACTION_SEND) {
+          const account = new transferService();
+          return account.runCommand(command);
+        } else {
+          const account = new accountService();
+          return account.runCommand(command);
+        }
 
       case NOUN_TRANSACTION:
         const transaction = new transactionService();
@@ -118,7 +123,7 @@ class MessageProcessService {
       return NOUN_AUTHENTICATION;
     }
 
-    if (/(balance|current balance|current account|my money)/.test(sentence)) {
+    if (/(balance|current balance|current account|my money|send account|transfer account|send account|transfer|send)/.test(sentence)) {
       return NOUN_BALANCE;
     }
 
@@ -138,7 +143,7 @@ class MessageProcessService {
       return NOUN_SAVING;
     }
 
-    if (/(transaction|my transactions|last payment|top transactions|my transactions|my payment)/.test(sentence)) {
+    if (/(transaction|my transactions|recent transaction|recent transactions|last payment|top transactions|my transactions|my payment)/.test(sentence)) {
       return NOUN_TRANSACTION;
     }
 
