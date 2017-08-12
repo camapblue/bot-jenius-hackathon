@@ -6,6 +6,19 @@ const NOUN_TRANSACTION = 'transaction';
 const NOUN_SPENDING = 'spending';
 
 class TransactionService {
+
+  _getInfo(command) {
+    let number = 10;
+
+    const { user, sentence } = command;
+    const numbers = sentence.match(/\d+/);
+    if (numbers.length > 0) {
+      number = numbers[0];
+    }
+
+    return number;
+  }
+
   _getTopTransaction(user,number) {
     const transactions = user.transactions.slice(0, number);
 
@@ -22,10 +35,11 @@ class TransactionService {
   }
 
   runCommand(command) {
-    const { user, action, noun } = command;
+    const { user, action } = command;
     switch(action) {
       case ACTION_INFO:
-        return this._getTopTransaction(user, 10);
+        const number = this._getInfo(command);
+        return this._getTopTransaction(user, number);
         break;
     }
   }

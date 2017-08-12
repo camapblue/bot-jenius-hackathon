@@ -88,7 +88,8 @@ class MessageProcessService {
     const noun = this.getNouns(sentence);
     const action = this.getAction(sentence);
     const user = this.user;
-    return { noun, action, user } ;
+
+    return { noun, action, user, sentence } ;
   }
 
   getNouns(sentence) {
