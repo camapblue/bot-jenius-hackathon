@@ -15,7 +15,8 @@
     "aws:refresh": "aws iam delete-role-policy --role-name jenibot-executor --policy-name log-writer && aws iam delete-role --role-name jenibot-executor",
     "aws:list": "aws lambda list-functions --region ap-southeast-1",
     "test:claudia": "claudia test-lambda --event ./test/chat.json",
-    "test": "babel-node test"
+    "test": "babel-node test",
+    "deploy": "yarm update:fb"
   },
   "license": "ISC",
   "dependencies": {
