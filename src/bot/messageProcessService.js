@@ -3,12 +3,14 @@ import accountService from '../domain/accountService';
 import authService from '../domain/authService';
 import generalService from '../domain/generalService';
 import linkService from '../domain/linkService';
+import transactionService from '../domain/transactionService';
 
 const NOUN_BALANCE = 'balance';
 const NOUN_EXCHANGE_RATE = 'exchangeRate';
 const NOUN_SAVING_RATE = 'savingRate';
 const NOUN_SPENDING = 'spending';
 const NOUN_WEATHER = 'weather';
+const NOUN_TRANSACTION = 'transaction';
 
 const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
@@ -52,7 +54,9 @@ class MessageProcessService {
         const account = new accountService();
         return account.runCommand(command);
 
-      break;
+      case NOUN_TRANSACTION:
+        const transaction = new transactionService();
+        return transaction.runCommand(command);
 
       case NOUN_EXCHANGE_RATE:
       case NOUN_SAVING_RATE:
@@ -69,12 +73,20 @@ class MessageProcessService {
   }
 
   getCommands(sentences) {
-    const commands = [];
+    let commands = [];
     for(let sentence of sentences) {
       if (sentence && sentence.length > 2) {
         const command = this.getCommand(sentence);
         commands.push(command);
       }
+    }
+
+    // filter only 1 WEATHER command
+    const weatherCommands = commands.filter(c => c.noun === NOUN_WEATHER);
+    if (weatherCommands.length > 0 && weatherCommands.length < commands.length) {
+      commands = commands.filter(c => c.noun !== NOUN_WEATHER);
+    } else if (weatherCommands.length > 1){
+      commands = [weatherCommands[0]];
     }
 
     return commands;
@@ -84,7 +96,8 @@ class MessageProcessService {
     const noun = this.getNouns(sentence);
     const action = this.getAction(sentence);
     const user = this.user;
-    return { noun, action, user } ;
+
+    return { noun, action, user, sentence } ;
   }
 
   getNouns(sentence) {
@@ -102,6 +115,10 @@ class MessageProcessService {
 
     if (/(account)/.test(sentence)) {
       return NOUN_ACCOUNT;
+    }
+
+    if (/(transaction|my transactions|last payment|top transactions|my transactions|my payment)/.test(sentence)) {
+      return NOUN_TRANSACTION;
     }
 
     return NOUN_WEATHER;
