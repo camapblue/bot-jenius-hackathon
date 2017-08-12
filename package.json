@@ -16,7 +16,7 @@
     "aws:list": "aws lambda list-functions --region ap-southeast-1",
     "test:claudia": "claudia test-lambda --event ./test/chat.json",
     "test": "babel-node test",
-    "deploy": "yarm update:fb"
+    "deploy": "yarn update:fb"
   },
   "license": "ISC",
   "dependencies": {

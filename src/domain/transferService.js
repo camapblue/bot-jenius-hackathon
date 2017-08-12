@@ -1,5 +1,5 @@
 import api from '../service/apiClient';
-
+import { fbTemplate } from 'claudia-bot-builder';
 const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
 
@@ -54,7 +54,13 @@ class TransferService {
     }
 
     if (amount && toAccount) {
-      return Promise.resolve(`Hi ${firstName}, you want to transfer ${amount} to account ${toAccount}, is that correct?`);
+      const message = `Hi ${firstName}, you want to transfer ${amount} to account ${toAccount}, is that correct?`;
+
+      return new fbTemplate.button(message)
+        .addButton('Yes', 'YES')
+        .addButton('No', 'NO')
+        .get()
+
     } else {
       return Promise.resolve(`Hi ${firstName}, seem you want to transfer money, but can you add more detail like [send to {account} {amount} idr by current account]? :)`);
     }
