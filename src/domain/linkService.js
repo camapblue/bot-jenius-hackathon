@@ -20,6 +20,7 @@ class LinkService {
               type: 'account_link',
               url: FRONTEND_URL
             }]
+            
           }]
         }
       }

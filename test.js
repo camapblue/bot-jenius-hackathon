@@ -1,5 +1,8 @@
-import botReply from './src/bot/reply';
+
 import constant from './src/utils/constant';
+import botReply from './src/bot/reply';
+import MessageService from './src/bot/messageProcessService';
+
 var readline = require('readline');
 
 function test(userChat) {
@@ -18,6 +21,7 @@ var rl = readline.createInterface(process.stdin, process.stdout);
 
 function startChatting() {
     constant.isTesting = true;
+    new MessageService().registerUser('cipta');
 
     rl.setPrompt('guess> ');
 

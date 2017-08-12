@@ -5,8 +5,10 @@ const FACEBOOK_SENDER_ID_FOR_TESTING = {
 };
 
 let IS_TESTING = false;
+let accounts = { };
 
 export default {
+  accounts,
   accessToken: ACCESS_TOKEN,
   senders: FACEBOOK_SENDER_ID_FOR_TESTING,
   isTesting: IS_TESTING

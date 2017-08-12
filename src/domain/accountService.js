@@ -1,4 +1,5 @@
 import api from '../service/apiClient';
+import { toIDRCurrency } from '../utils/utils';
 
 const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
@@ -10,10 +11,15 @@ const NOUN_ACCOUNT = 'account';
 
 class AccountService {
   _getCurrentBalance(user) {
-    const { profile: { firstName } } = user;
+    console.log('USER =', user);
+    const { profile } = user;
+    if (!profile) return Promise.resolve('Please link to Jenius account first.');
+
+    const { firstName } = profile;
 
     const account = user.accounts.find(a => a.type === 'PRIMARY_ACCOUNT');
-    return Promise.resolve(`Hi ${firstName}, your Active Balance is ${account.balance} ${account.currency} 👍`);
+    const balance = toIDRCurrency(account.balance);
+    return Promise.resolve(`Hi ${firstName}, your Active Balance is ${balance} ${account.currency} 👍`);
   }
 
   _sendMoney(user, toAccount, amount) {

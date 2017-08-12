@@ -5,6 +5,7 @@ import linkService from '../domain/linkService';
 import transactionService from '../domain/transactionService';
 import greetingService from "../domain/greetingService";
 import transferService from "../domain/transferService";
+import constant from '../utils/constant';
 
 const NOUN_BALANCE = 'balance';
 const NOUN_EXCHANGE_RATE = 'exchangeRate';
