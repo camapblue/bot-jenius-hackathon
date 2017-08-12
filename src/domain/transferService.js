@@ -1,4 +1,5 @@
 import api from '../service/apiClient';
+import authService from './authService';
 import { fbTemplate } from 'claudia-bot-builder';
 const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
@@ -172,12 +173,17 @@ class TransferService {
   }
 
   _transferToAccount(session) {
+    const { sender, username } = session;
     const { amount, toAccount, fromAccount } = session.context_data;
     const command = { noun: '' };
 
     return api
       .transferAmount(fromAccount, toAccount, amount)
-      .then(data => `Transferred money to account ${toAccount} already. good luck with it!`)
+      .then(data => {
+        const authService = new authService();
+        authService.runCommand({ sender, username });
+        return `Transferred money to account ${toAccount} already. good luck with it!`
+      })
       .catch(data => `Seem account ${toAccount} doesn't exists. Please help checking it again.`);
   }
 

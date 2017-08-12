@@ -40,6 +40,8 @@ class MessageProcessService {
       username,
       sender
     }).then(session => {
+      session.username = username;
+      session.sender = sender;
       this.sessions[sender] = session;
     });
   }
