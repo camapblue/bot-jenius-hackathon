@@ -32,8 +32,8 @@ const typingOff = (sender) => {
   fbReply(sender, message, constant.accessToken);
 };
 
-const registerLoggedInUser = (username) => {
-  messageProcessor.registerUser(username)
+const registerLoggedInUser = (username, sender) => {
+  messageProcessor.registerUser(username, sender);
 }
 
 const botReply = message => {
@@ -50,7 +50,7 @@ const botReply = message => {
 
   const { status, authorization_code } = account_linking;
   if (status === 'linked') {
-    registerLoggedInUser(authorization_code);
+    registerLoggedInUser(authorization_code, sender);
     return Promise.resolve(`Hi ${authorization_code}, you've linked to Jenius account successful.`);
   }
 };

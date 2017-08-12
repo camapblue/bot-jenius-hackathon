@@ -4,7 +4,7 @@ import { fbTemplate } from 'claudia-bot-builder';
 const ACTION_LINK = 'link';
 const NOUN_ACCOUNT = 'account';
 
-const FRONTEND_URL = 'https://jenius-hackathon-bot-login.herokuapp.com/index.html';
+const FRONTEND_URL = 'https://jenius-hackathon-bot-login.herokuapp.com';
 
 class LinkService {
   _getAccountLink() {
@@ -18,9 +18,9 @@ class LinkService {
             image_url: FRONTEND_URL + '/linking.png',
             buttons: [{
               type: 'account_link',
-              url: FRONTEND_URL
+              url: FRONTEND_URL + '/index.html'
             }]
-            
+
           }]
         }
       }

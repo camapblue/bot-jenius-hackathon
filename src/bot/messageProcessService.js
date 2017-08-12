@@ -18,9 +18,10 @@ const NOUN_AUTHENTICATION = 'authentication';
 const NOUN_ACCOUNT = 'account';
 const NOUN_SAVING = 'saving';
 
-const CONTEXT_SENDING = 'TRANSFER_MONEY';
-const CONTEXT_SENDING_YES = 'YES';
-const CONTEXT_SENDING_NO = 'NO';
+const CONTEXT_SENDING = 'CONTEXT_SENDING';
+const CONTEXT_SENDING_SELECT_USER = 'CONTEXT_SENDING_SELECT_USER';
+const CONTEXT_SENDING_SELECT_USER_ACCOUNTS = 'CONTEXT_SENDING_SELECT_USER_ACCOUNTS';
+
 
 const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
@@ -29,34 +30,34 @@ const ACTION_LINK = 'link';
 class MessageProcessService {
   constructor() {
     this.sessions = { };
-
-    this.user = {
-      accountNumber: '90010011012'
-    };
+    // this.registerUser('hien');
   }
 
-  registerUser(username) {
+  registerUser(username, sender) {
     const auth = new authService();
     auth.runCommand({
       username
     }).then(user => {
-      this.user = user;
+      this.sessions[sender] = { user, context: null };
     });
   }
 
   process(rawMessage, sender) {
-    let currentSession = this.sessions[sender];
-    if (!currentSession) {
-      currentSession = this.sessions[sender] = { user: this.user, context: null };
-    } else {
-      currentSession.user = this.user;
-    }
-
     const message = rawMessage.toLowerCase();
-    // console.log('current session', currentSession);
-    if (currentSession.context === CONTEXT_SENDING) {
+    let currentSession = this.sessions[sender];
+
+    if (!currentSession) {
+      currentSession = {
+        user: { profile: { firstName: 'friend' }},
+        context: null
+      };
+
+      this.sessions[sender]= currentSession;
+    }
+    if (currentSession.context &&
+      currentSession.context.indexOf(CONTEXT_SENDING) !== -1) {
       const transfer = new transferService();
-      return transfer.runReplyCommand(message, currentSession);
+      return Promise.resolve(transfer.runReplyCommand(message, currentSession));
     }
 
     const sentences = this.seperatedSentence(message);

@@ -21,7 +21,7 @@ var rl = readline.createInterface(process.stdin, process.stdout);
 
 function startChatting() {
     constant.isTesting = true;
-    new MessageService().registerUser('cipta');
+    new MessageService().registerUser('cipta', constant.senders.kingbon);
 
     rl.setPrompt('guess> ');
 
