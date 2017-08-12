@@ -17,9 +17,10 @@ const NOUN_AUTHENTICATION = 'authentication';
 const NOUN_ACCOUNT = 'account';
 const NOUN_SAVING = 'saving';
 
-const CONTEXT_SENDING = 'TRANSFER_MONEY';
-const CONTEXT_SENDING_YES = 'YES';
-const CONTEXT_SENDING_NO = 'NO';
+const CONTEXT_SENDING = 'CONTEXT_SENDING';
+const CONTEXT_SENDING_SELECT_USER = 'CONTEXT_SENDING_SELECT_USER';
+const CONTEXT_SENDING_SELECT_USER_ACCOUNTS = 'CONTEXT_SENDING_SELECT_USER_ACCOUNTS';
+
 
 const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
@@ -52,8 +53,8 @@ class MessageProcessService {
     }
 
     const message = rawMessage.toLowerCase();
-    // console.log('current session', currentSession);
-    if (currentSession.context === CONTEXT_SENDING) {
+    console.log('current session', currentSession.context);
+    if (currentSession.context && currentSession.context.indexOf(CONTEXT_SENDING) !== -1) {
       const transfer = new transferService();
       return transfer.runReplyCommand(message, currentSession);
     }

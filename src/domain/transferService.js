@@ -3,7 +3,7 @@ import { fbTemplate } from 'claudia-bot-builder';
 const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
 
-const CONTEXT_SENDING = 'TRANSFER_MONEY';
+const CONTEXT_SENDING = 'CONTEXT_SENDING';
 const CONTEXT_SENDING_SELECT_USER = 'CONTEXT_SENDING_SELECT_USER';
 const CONTEXT_SENDING_SELECT_USER_ACCOUNTS = 'CONTEXT_SENDING_SELECT_USER_ACCOUNTS';
 const CONTEXT_SENDING_YES = 'YES';
@@ -15,6 +15,11 @@ class TransferService {
 
     const account = user.accounts.find(a => a.type === 'PRIMARY_ACCOUNT');
     return Promise.resolve(`Hi ${firstName}, your Active Balance is ${account.balance} ${account.currency} 👍`);
+  }
+
+  _getPrimaryAccount(user) {
+    const account = user.accounts.find(a => a.type === 'PRIMARY_ACCOUNT');
+    return account.accountNumber;
   }
 
   _getNumber(sentence) {
@@ -66,14 +71,16 @@ class TransferService {
     const toIndex = sentence.lastIndexOf('to');
     let toAccount = null;
     let amount = null;
+
+    const fromAccount = this._getPrimaryAccount(user);
     const numbers = this._getNumber(sentence);
-    if (toIndex > 0 && numbers.length > 1) {
+
+    if (toIndex > 0 && numbers && numbers.length > 1) {
       const accountPart = sentence.substring(toIndex);
       toAccount = this._extractAccount(accountPart);
       amount = this._extractNumber(sentence, toAccount);
 
       if (amount && toAccount) {
-        const fromAccount = '90010011012';
         const message = `Hi ${firstName}, you want to transfer ${amount} to account ${toAccount}, is that correct?`;
         session.context = CONTEXT_SENDING;
         session.context_data = {
@@ -90,12 +97,19 @@ class TransferService {
       else {
         return Promise.resolve(`Hi ${firstName}, seem you want to transfer money, but can you add more detail like [send to {account} {amount} idr by current account]? :)`);
       }
-    } else if (numbers.length == 1){
+    } else if (numbers && numbers.length == 1){
       const amount = numbers[0];
       const namePart = sentence.substring(toIndex);
       const name = this._extractName(namePart);
+      session.context_data = {
+        ...session.context_data,
+        amount,
+        toAccount,
+        fromAccount
+      };
+
       if (name) {
-        return this._findUserToSendMoney(name, amount, session);
+        return this._findUserToSendMoney(name, session);
       }
       return Promise.resolve(`Hi ${firstName}, seem you want to transfer money, but can you add more detail like [send to {account} {amount} idr by current account]? :)`);
     } else {
@@ -103,60 +117,99 @@ class TransferService {
     }
   }
 
-  _findUserToSendMoney(name, amount, session) {
+  _findUserToSendMoney(name, session) {
     return api.findUser(name).then(data => {
       if (data.length > 1) {
-        const receivers = data;
-        session.context = CONTEXT_SENDING_SELECT_USER;
-        session.context_data = { amount, receivers };
-
-        const list = new fbTemplate.List();
-
-        for(const receiver of receivers) {
-          const { profile: { avatarUrl, firstName, lastName, phone, email, username } } = receiver;
-          list
-            .addBubble(`${firstName} ${lastName}`, `${phone} ${email}`)
-            .addImage(avatarUrl)
-            .addButton('Send', 'PICK_' + username)
-        }
-
-
-        return list.get();
+        return this._selectUser(data, session);
       } else if (data.length === 1) {
-        session.context = CONTEXT_SENDING_SELECT_USER_ACCOUNTS;
-        const receiver = data[0];
-        const { profile: { avatarUrl, firstName, lastName, phone, email, username }, accounts } = receiver;
-        session.context_data = { amount, receiver };
-
-        const list = new fbTemplate.List();
-
-        for(const account of accounts) {
-          const { accountNumber } = account;
-          list
-            .addBubble(`${accountNumber}`, `${firstName} ${lastName} ${phone} ${email}`)
-            .addImage(avatarUrl)
-            .addButton('Send', 'PICK_' + username)
-        }
-
-        return list.get();
+        return this._selectAccount(data, session);
+      } else {
+        return Promise.resolve(`No user has name: ${name}`);
       }
     });
   }
 
+  _selectUser(data, session) {
+    const receivers = data;
+    session.context = CONTEXT_SENDING_SELECT_USER;
+    session.context_data = {
+      ...session.context_data,
+      receivers
+    };
+
+    const list = new fbTemplate.List();
+
+    for(const receiver of receivers) {
+      const { profile: { avatarUrl, firstName, lastName, phone, email, username } } = receiver;
+      list
+        .addBubble(`${firstName} ${lastName}`, `${phone} ${email}`)
+        .addImage(avatarUrl)
+        .addButton(`Send to ${firstName} ${lastName}`, 'PICK_' + username)
+    }
+
+    return list.get();
+  }
+
+  _selectAccount(data, session) {
+    session.context = CONTEXT_SENDING_SELECT_USER_ACCOUNTS;
+    const receiver = data[0];
+    const { profile: { avatarUrl, firstName, lastName, phone, email }, accounts } = receiver;
+    session.context_data = { ...session.context_data, receiver };
+
+    const list = new fbTemplate.List();
+
+    for(const account of accounts) {
+      const { accountNumber } = account;
+      list
+        .addBubble(`${accountNumber}`, `${firstName} ${lastName} ${phone} ${email}`)
+        .addImage(avatarUrl)
+        .addButton(`Send to ${accountNumber}`, 'PICK_' + accountNumber)
+    }
+
+    return list.get();
+  }
+
+  _transferToAccount(session) {
+    const { amount, toAccount, fromAccount } = session.context_data;
+    const command = { noun: '' };
+
+    return api
+      .transferAmount(fromAccount, toAccount, amount)
+      .then(data => `Transferred money to account ${toAccount} already. good luck with it!`)
+      .catch(data => `Seem account ${toAccount} doesn't exists. Please help checking it again.`);
+  }
+
   runReplyCommand(message, session) {
-    session.context = null;
-    if (message === CONTEXT_SENDING_YES.toLowerCase()) {
-      const { amount, toAccount, fromAccount } = session.context_data;
-      const command = {
-        noun: ''
+    if (session.context === CONTEXT_SENDING) {
+      session.context = null;
+
+      if (message === CONTEXT_SENDING_YES.toLowerCase()) {
+        return this._transferToAccount(session);
+      }
+
+      return Promise.resolve('You choose cancel transfer money.');
+    }
+
+    if (session.context === CONTEXT_SENDING_SELECT_USER) {
+      const words = message.split('_');
+      const username = words[1];
+      const { receivers, amount } = session.context_data;
+      const receiver = receivers.filter(i => i.profile.username === username);
+
+      return this._selectAccount(receiver, session);
+    }
+
+    if (session.context === CONTEXT_SENDING_SELECT_USER_ACCOUNTS) {
+      const words = message.split('_');
+      const account = words[1];
+      session.context_data = {
+        ...session.context_data,
+        toAccount: account
       };
 
-      return api
-        .transferAmount(fromAccount, toAccount, amount)
-        .then(data => `Transferred money to account ${toAccount} already. good luck with it!`)
-        .catch(data => `Seem account ${toAccount} doesn't exists. Please help checking it again.`);
+      return this._transferToAccount(session);
     }
-    return Promise.resolve('You choose cancel transfer money.')
+
   }
 
   runCommand(command) {
