@@ -1,4 +1,3 @@
-import api from '../service/apiClient';
 import accountService from '../domain/accountService';
 import authService from '../domain/authService';
 import generalService from '../domain/generalService';
@@ -18,15 +17,20 @@ const NOUN_AUTHENTICATION = 'authentication';
 const NOUN_ACCOUNT = 'account';
 const NOUN_SAVING = 'saving';
 
+const CONTEXT_SENDING = 'TRANSFER_MONEY';
+const CONTEXT_SENDING_YES = 'YES';
+const CONTEXT_SENDING_NO = 'NO';
+
 const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
 const ACTION_LINK = 'link';
 
-
 class MessageProcessService {
   constructor() {
+    this.sessions = { };
+
     this.user = {
-      accountNumber: '90010000526'
+      accountNumber: '90010011012'
     };
 
     const auth = new authService();
@@ -38,10 +42,23 @@ class MessageProcessService {
   }
 
 
-  process(rawMessage) {
+  process(rawMessage, sender) {
+    let currentSession = this.sessions[sender];
+    if (!currentSession) {
+      currentSession = this.sessions[sender] = { user: this.user, context: null };
+    } else {
+      currentSession.user = this.user;
+    }
+
     const message = rawMessage.toLowerCase();
+    // console.log('current session', currentSession);
+    if (currentSession.context === CONTEXT_SENDING) {
+      const transfer = new transferService();
+      return transfer.runReplyCommand(message, currentSession);
+    }
+
     const sentences = this.seperatedSentence(message);
-    const commands = this.getCommands(sentences);
+    const commands = this.getCommands(sentences, sender);
     const promises = commands.map(command => this.runCommand(command));
 
     return Promise.all(promises).then(replyMessages => {
@@ -90,11 +107,11 @@ class MessageProcessService {
     }
   }
 
-  getCommands(sentences) {
+  getCommands(sentences, sender) {
     let commands = [];
     for(let sentence of sentences) {
       if (sentence && (sentence.length > 2 || sentence === 'hi')) {
-        const command = this.getCommand(sentence);
+        const command = this.getCommand(sentence, sender);
         commands.push(command);
       }
     }
@@ -110,12 +127,13 @@ class MessageProcessService {
     return commands;
   }
 
-  getCommand(sentence) {
+  getCommand(sentence, sender) {
     const noun = this.getNouns(sentence);
     const action = this.getAction(sentence);
-    const user = this.user;
+    const session = this.sessions[sender];
+    const { user } = session;
 
-    return { noun, action, user, sentence } ;
+    return { noun, action, user, sentence, session } ;
   }
 
   getNouns(sentence) {

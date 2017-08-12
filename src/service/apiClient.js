@@ -6,15 +6,18 @@ const getUrl = action => baseUrl + action;
 
 const callApi = (method = 'get', action, param, data) => {
   const url = param ? getUrl(action + '?' + param): getUrl(action);
-
   return axios({ method, url, data })
     .then(response => response.data);
 };
 
 const getCurrentBalance = accountNumber => callApi('post', 'show-balance', null, { accountNumber });
 const getUser = username => callApi('get', 'users/'+ username);
+const transferAmount = (ownerAccountNumber, partnerAccountNumber, amount) => callApi('post', 'actions/transfer-money', null, { ownerAccountNumber, partnerAccountNumber, amount });
+const findUser = text => callApi('get', 'users', 'firstname=' + text);
 
 export default {
   getCurrentBalance,
-  getUser
+  getUser,
+  transferAmount,
+  findUser
 }
