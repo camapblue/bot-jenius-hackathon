@@ -9,8 +9,10 @@ const NOUN_SPENDING = 'spending';
 
 class AccountService {
   _getCurrentBalance(user) {
+    const { profile: { lastName } } = user;
+
     const account = user.accounts.find(a => a.type === 'PRIMARY_ACCOUNT');
-    return Promise.resolve(`Your current balance account is ${account.balance} ${account.currency}`);
+    return Promise.resolve(`Hi ${lastName}, your Active Balance is ${account.balance} ${account.currency} 👍`);
   }
 
   _sendMoney(user, toAccount, amount) {
