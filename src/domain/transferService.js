@@ -181,8 +181,7 @@ class TransferService {
       .transferAmount(fromAccount, toAccount, amount)
       .then(data => {
         const authService = new authService();
-        authService.runCommand({ sender, username });
-        return `Transferred money to account ${toAccount} already. good luck with it!`
+        return authService.runCommand({ sender, username }).then(() => `Transferred money to account ${toAccount} already. good luck with it!`);
       })
       .catch(data => `Seem account ${toAccount} doesn't exists. Please help checking it again.`);
   }
