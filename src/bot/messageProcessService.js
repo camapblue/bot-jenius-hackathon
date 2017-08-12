@@ -5,21 +5,23 @@ import generalService from '../domain/generalService';
 import linkService from '../domain/linkService';
 import transactionService from '../domain/transactionService';
 import greetingService from "../domain/greetingService";
+import transferService from "../domain/transferService";
 
 const NOUN_BALANCE = 'balance';
 const NOUN_EXCHANGE_RATE = 'exchangeRate';
 const NOUN_SAVING_RATE = 'savingRate';
-const NOUN_SPENDING = 'spending';
 const NOUN_WEATHER = 'weather';
 const NOUN_TRANSACTION = 'transaction';
 const NOUN_HI = 'sayHi';
 const NOUN_HOW = 'sayHow';
+const NOUN_AUTHENTICATION = 'authentication';
+const NOUN_ACCOUNT = 'account';
+const NOUN_SAVING = 'saving';
 
 const ACTION_SEND = 'send';
 const ACTION_INFO = 'info';
-
 const ACTION_LINK = 'link';
-const NOUN_ACCOUNT = 'account';
+
 
 class MessageProcessService {
   constructor() {
@@ -29,7 +31,7 @@ class MessageProcessService {
 
     const auth = new authService();
     auth.runCommand({
-      username: 'alice'
+      username: 'hien'
     }).then(user => {
       this.user = user;
     });
@@ -56,8 +58,14 @@ class MessageProcessService {
   runCommand(command) {
     switch(command.noun) {
       case NOUN_BALANCE:
-        const account = new accountService();
-        return account.runCommand(command);
+      case NOUN_ACCOUNT:
+        if (command.action === ACTION_SEND) {
+          const account = new transferService();
+          return account.runCommand(command);
+        } else {
+          const account = new accountService();
+          return account.runCommand(command);
+        }
 
       case NOUN_TRANSACTION:
         const transaction = new transactionService();
@@ -68,7 +76,7 @@ class MessageProcessService {
         const general = new generalService();
         return general.runCommand(command);
 
-      case NOUN_ACCOUNT:
+      case NOUN_AUTHENTICATION:
         const link = new linkService();
         return link.runCommand(command);
 
@@ -111,7 +119,11 @@ class MessageProcessService {
   }
 
   getNouns(sentence) {
-    if (/(balance|current balance|current account|my money)/.test(sentence)) {
+    if (/(login|log in|signin|sign in|let me in|connect|link account)/.test(sentence)) {
+      return NOUN_AUTHENTICATION;
+    }
+
+    if (/(balance|current balance|current account|my money|send account|transfer account|send account|transfer|send)/.test(sentence)) {
       return NOUN_BALANCE;
     }
 
@@ -123,11 +135,15 @@ class MessageProcessService {
       return NOUN_SAVING_RATE;
     }
 
-    if (/(account)/.test(sentence)) {
+    if (/(accounts|my cards|my accounts|check accounts|what accounts|what is my accounts|what are my accounts|what are accounts|how accounts)/.test(sentence)) {
       return NOUN_ACCOUNT;
     }
 
-    if (/(transaction|my transactions|last payment|top transactions|my transactions|my payment)/.test(sentence)) {
+    if (/(saving|my saving|my saving|check saving|what saving|what is my saving|what are my saving|what are saving|how saving|savings)/.test(sentence)) {
+      return NOUN_SAVING;
+    }
+
+    if (/(transaction|my transactions|recent transaction|recent transactions|last payment|top transactions|my transactions|my payment)/.test(sentence)) {
       return NOUN_TRANSACTION;
     }
 

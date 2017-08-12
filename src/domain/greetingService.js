@@ -8,14 +8,14 @@ const bot_name = 'Jeni';
 class greetingService {
   constructor() {
     this.greetingInfo = {
-      sayHi: [`Hi $name, I am ${bot_name}, how can I help you? (Growing Heart)`,
-              `Hi $name, I am ${bot_name}, Jakarta is so beautiful today, anything I can help you? (Green Heart)`,
-              `Hi $name, I am ${bot_name}, may I do something for you? (Balloon)(Balloon)(Balloon)`,
-              `Hi $name, Hope you have a very good day! May ${bot_name} help you some thing? (Rose)`],
+      sayHi: [`Hi $name, I am ${bot_name}, how can I help you? 💗`,
+              `Hi $name, I am ${bot_name}, Jakarta is so beautiful today, anything I can help you? 💚`,
+              `Hi $name, I am ${bot_name}, may I do something for you? 🎈🎈🎈`,
+              `Hi $name, Hope you have a very good day! May ${bot_name} help you some thing? 🌹`],
       sayHow: [`Hi $name, Thanks for your asking. ${bot_name} is very good, and always waiting to help you :*`,
-        `Hi $name, seem ${bot_name} have a good day! May ${bot_name} help you in something? (Bouquet of Flower)`,
-        `Hi $name, Hope you have a very good day! May ${bot_name} do something for you? (Raising One Hand)`,
-        `${bot_name} is good, Hope $name have a very good day too! May ${bot_name} do something for you? (Savouring Delicious Food)`]
+        `Hi $name, seem ${bot_name} have a good day! May ${bot_name} help you in something? 💐`,
+        `Hi $name, Hope you have a very good day! May ${bot_name} do something for you? 🙋`,
+        `${bot_name} is good, Hope $name have a very good day too! May ${bot_name} do something for you? 😉`]
     }
   }
 
@@ -25,8 +25,8 @@ class greetingService {
   }
 
   answerHi(command) {
-    const { user: { profile: { lastName } } } = command;
-    const fullName = `${lastName}`;
+    const { user: { profile: { firstName } } } = command;
+    const fullName = `${firstName}`;
 
     const { sayHi } = this.greetingInfo;
     const message = sayHi[this._getRandom()].replace('$name', fullName);
@@ -35,8 +35,8 @@ class greetingService {
   }
 
   answerHow(command) {
-    const { user: { profile: { lastName } } } = command;
-    const fullName = `${lastName}`;
+    const { user: { profile: { firstName } } } = command;
+    const fullName = `${firstName}`;
 
     const { sayHow } = this.greetingInfo;
     const message = sayHow[this._getRandom()].replace('$name', fullName);

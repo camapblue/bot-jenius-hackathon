@@ -30,13 +30,7 @@ class LinkService {
   }
 
   runCommand(command) {
-    const { action, noun } = command;
-
-    switch(action) {
-      case ACTION_LINK:
-        return this._getAccountLink();
-        break;
-    }
+    return this._getAccountLink();
   }
 }
 
