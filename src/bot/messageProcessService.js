@@ -113,8 +113,13 @@ class MessageProcessService {
   processSession(currentSession, sender, message) {
     if (currentSession.context &&
       currentSession.context.indexOf(CONTEXT_SENDING) !== -1) {
+
       const transfer = new transferService();
-      return Promise.resolve(transfer.runReplyCommand(message, currentSession));
+      return Promise.resolve(transfer.runReplyCommand(message, currentSession)).then(m => {
+        if (m.indexOf('Transferred money to account') !== -1) {
+          return this.registerUser(currentSession.username, sender).then(() => m);
+        }
+      });
     }
 
     const sentences = this.seperatedSentence(message);
