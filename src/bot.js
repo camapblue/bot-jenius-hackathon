@@ -10,7 +10,7 @@ import botReply from './bot/reply';
 */
 
 const api = botBuilder((message) => {
-  console.log('RECEIV MESSAGE =', JSON.stringify(message));
+  console.log('RECEIVE MESSAGE =', JSON.stringify(message));
   return botReply(message);
 });
 

@@ -32,12 +32,27 @@ const typingOff = (sender) => {
   fbReply(sender, message, constant.accessToken);
 };
 
+const registerLoggedInUser = (username) => {
+  messageProcessor.registerUser(username)
+}
+
 const botReply = message => {
   const { sender, text } = message;
 
   typingOn(sender);
 
-  return aiReply(sender, text);
+  if (text.length > 0) {
+    return aiReply(sender, text);
+  }
+  
+  const { originalRequest : { account_linking } } = message;
+  if (!account_linking) return Promise.resolve('Why do you say nothing ?');
+
+  const { status, authorization_code } = account_linking;
+  if (status === 'linked') {
+    registerLoggedInUser(authorization_code);
+    return Promise.resolve(`Hi ${authorization_code}, you've linked to Jenius account successful.`);
+  }
 };
 
 export default botReply;

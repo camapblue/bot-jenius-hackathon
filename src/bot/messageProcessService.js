@@ -32,15 +32,16 @@ class MessageProcessService {
     this.user = {
       accountNumber: '90010011012'
     };
+  }
 
+  registerUser(username) {
     const auth = new authService();
     auth.runCommand({
-      username: 'hien'
+      username
     }).then(user => {
       this.user = user;
     });
   }
-
 
   process(rawMessage, sender) {
     let currentSession = this.sessions[sender];
