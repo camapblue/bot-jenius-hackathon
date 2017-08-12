@@ -15,7 +15,7 @@ class LinkService {
           template_type: 'generic',
           elements: [{
             title: 'Link to your Jenius account',
-            image_url: FRONTEND_URL + '/linking.png',
+            image_url: FRONTEND_URL + '/login.png',
             buttons: [{
               type: 'account_link',
               url: FRONTEND_URL + '/index.html'
