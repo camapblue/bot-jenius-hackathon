@@ -122,19 +122,16 @@ class MessageProcessService {
       return transfer.runReplyCommand(message, currentSession).then(m => {
         // fbReply(sender, 'Btw, with your current spending pace, you might not make it until the next payday :(', constant.accessToken);
 
-        setTimeout(() => {
-          fbReply(sender, 'Btw, with your current spending\n' +
-            'pace, you might not make it\n' +
-            'until the next payday :(', constant.accessToken);
-        }, 1000);
-
         if (m.indexOf('Transferred money to account') !== -1) {
-          return this.registerUser(currentSession.username, currentSession.sender)
-            .then(() => m)
-
+          return this.registerUser(currentSession.user.profile.username, sender)
+            .then(() => m + '\n\n\nBtw, with your current spending\n' +
+              'pace, you might not make it\n' +
+              'until the next payday :(');
         }
 
-        return m;
+        return m + '\n\n\nBtw, with your current spending\n' +
+          'pace, you might not make it\n' +
+          'until the next payday :(';
       });
     }
 

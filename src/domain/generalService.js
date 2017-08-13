@@ -35,7 +35,7 @@ class GeneralService {
   _getOverSpendingInfo(user) {
     const account = user.accounts.find(a => a.type === 'PRIMARY_ACCOUNT');
     const dailySpending = Math.round((account && account.balance) ? (account.balance / 15) : 233000);
-    return Promise.resolve(`You spend too much on food & drinks, especially Starbucks and Menya Sakura 🍕  It will be wise if you limit yourself to only spend daily ${dailySpending} IDR for the rest of the months 💪`);
+    return Promise.resolve(`You spend too much on food & drinks, especially Starbucks☕☕☕ and Menya Sakura 🍕🍕🍕It will be wise if you limit yourself to only spend daily ${dailySpending} IDR for the rest of the months 💪`);
   }
 
   getExchangeRate() {
