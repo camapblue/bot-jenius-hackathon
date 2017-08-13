@@ -3,6 +3,7 @@ import api from '../service/apiClient';
 
 const NOUN_EXCHANGE_RATE = 'exchangeRate';
 const NOUN_SAVING_RATE = 'savingRate';
+const NOUN_OVER_SPENDING = 'over_spending';
 
 class GeneralService {
   constructor() {
@@ -18,6 +19,23 @@ class GeneralService {
         IDR_VND : '178,430.00',
       }
     }
+  }
+
+  _getCurrentBalance(user) {
+    const { profile } = user;
+    if (!profile) return Promise.resolve('Please link to Jenius account first.');
+
+    const { firstName } = profile;
+
+    const account = user.accounts.find(a => a.type === 'PRIMARY_ACCOUNT');
+    const balance = toIDRCurrency(account.balance);
+    return Promise.resolve(`Hi ${firstName}, your Active Balance is ${balance} ${account.currency} 👍`);
+  }
+
+  _getOverSpendingInfo(user) {
+    const account = user.accounts.find(a => a.type === 'PRIMARY_ACCOUNT');
+    const dailySpending = Math.round((account && account.balance) ? (account.balance / 15) : 233000);
+    return Promise.resolve(`You spend too much on food & drinks, especially Starbucks and Menya Sakura 🍕  It will be wise if you limit yourself to only spend daily ${dailySpending} IDR for the rest of the months 💪`);
   }
 
   getExchangeRate() {
@@ -51,6 +69,9 @@ Maxi Saver maximum rate is ${maxiSaver}% p.a.`;
       case NOUN_SAVING_RATE:
         return this.getSavingInfo();
         break;
+
+      case NOUN_OVER_SPENDING:
+        return this._getOverSpendingInfo(user);
 
     }
   }

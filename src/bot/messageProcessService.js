@@ -12,6 +12,7 @@ const fbReply = require('../service/fbService');
 const NOUN_BALANCE = 'balance';
 const NOUN_EXCHANGE_RATE = 'exchangeRate';
 const NOUN_SAVING_RATE = 'savingRate';
+const NOUN_OVER_SPENDING = 'over_spending';
 const NOUN_WEATHER = 'weather';
 const NOUN_TRANSACTION = 'transaction';
 const NOUN_HI = 'sayHi';
@@ -95,6 +96,7 @@ class MessageProcessService {
 
       case NOUN_EXCHANGE_RATE:
       case NOUN_SAVING_RATE:
+      case NOUN_OVER_SPENDING:
         const general = new generalService();
         return general.runCommand(command);
 
@@ -178,6 +180,10 @@ class MessageProcessService {
   getNouns(sentence) {
     if (/(login|log in|signin|sign in|let me in|connect|link account)/.test(sentence)) {
       return NOUN_AUTHENTICATION;
+    }
+
+    if (/(overpending|over payment|over spending|overspent|over spent|spending too much|too much spending|spend too much)/.test(sentence)) {
+      return NOUN_OVER_SPENDING;
     }
 
     if (/(balance|current balance|current account|my money|send account|transfer account|send account|transfer|send)/.test(sentence)) {
